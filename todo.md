@@ -25,6 +25,8 @@
 
 - system fonts vergrößern
   - komplette nerdfonts installiert, ist ein bisschen viel !!!
+  - nerdfonts gezielt installiert (FiraCode, DroidSansMono) in configuration.nix
+  - lokale benutzerfonts in ```~/.nix-profile/share/fonts```
 
 #### to-read
 - nix manual
