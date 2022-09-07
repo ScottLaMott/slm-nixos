@@ -23,15 +23,20 @@
   ### slm started here
 
   home.packages = [
+    pkgs.alacritty
     pkgs.btop
     pkgs.gdu
     pkgs.cmatrix
+    pkgs.kitty
     pkgs.powerline-fonts
     pkgs.speedtest-cli
   ];
 
   programs.bash = {
     enable = true;
+    shellAliases = {
+      c  = "clear";
+    };
     initExtra = ''
       #
       # declared in home.nix / by slm

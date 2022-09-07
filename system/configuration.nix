@@ -36,7 +36,9 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  services.xserver.windowManager.awesome.enable = true;
   services.xserver.windowManager.dwm.enable = true;
+  #services.xserver.windowManager.dwm.enable = true;
   services.xserver.resolutions = [
     {
       x = 2048; y = 1152;
@@ -146,4 +148,9 @@
   # https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
 
+  # fonts.fontconfig.enable = true;
+  # fonts.fontconfig.localConf = "FiraCode";
+  fonts.fonts = with pkgs; [
+      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    ];
 }
