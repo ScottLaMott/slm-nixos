@@ -22,14 +22,19 @@
 
   ### slm started here
 
-  home.packages = [
-    pkgs.alacritty
-    pkgs.btop
-    pkgs.gdu
-    pkgs.cmatrix
-    pkgs.kitty
-    pkgs.powerline-fonts
-    pkgs.speedtest-cli
+  home.packages = with pkgs; [
+    alacritty
+    btop
+    feh
+    figlet
+    gdu
+    git
+    git-crypt
+    gnupg
+    cmatrix
+    kitty
+    powerline-fonts
+    speedtest-cli
   ];
 
   programs.bash = {
