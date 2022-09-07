@@ -9,6 +9,8 @@
   - windowmanager awesome mit lokaler config-datei in .config/awesome, nicht mit nix gebaut
   - auflösung für Bildschirm in configuration.nix eingestellt (1600x900)
 
+  - git integration nach you-tube-video von Wil T.
+
 ## fragen und antworten
   f - sind .nix dateien konfigurationsdateien ?
   a - irgendwie schon, sie sind aber auch quellcode

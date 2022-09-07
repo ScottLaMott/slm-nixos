@@ -1,18 +1,15 @@
 ### nixos
 ---
 ### todo first
-- systems fonts vergrößern 
 - zsh login-shell
-- git intergragtion
+- git integragtion
 
 ### todo
+- nixos auf bare-metal
 - display acceleration
   - `vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
-- vim configuration
-- displaymanager installation und configuration, dwm
-- terminal installation und configuration, st
-  - limitierter scrollbereich mit <alt>j, buffer zu klein
+- farbige man-pages
 
 ### done
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
@@ -27,6 +24,7 @@
   - komplette nerdfonts installiert, ist ein bisschen viel !!!
   - nerdfonts gezielt installiert (FiraCode, DroidSansMono) in configuration.nix
   - lokale benutzerfonts in ```~/.nix-profile/share/fonts```
+  - resolution auf 1600x900 gesetzt, das ist die lösung für kleine schrift in brave usw.
 
 #### to-read
 - nix manual
