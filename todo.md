@@ -5,7 +5,8 @@
   - konflikt mit fzf
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - git integragtion
-- zsh aufruf dauert lange, powerlevel10k ????
+- zsh aufruf dauert lange, powerlevel10k
+  - mit zprof untersuchen
 
 ### todo
 - nixos auf bare-metal
