@@ -3,25 +3,15 @@
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
-  home.username = "slm";
+  home.username      = "slm";
   home.homeDirectory = "/home/slm";
-
-  # This value determines the Home Manager release that your
-  # configuration is compatible with. This helps avoid breakage
-  # when a new Home Manager release introduces backwards
-  # incompatible changes.
-  #
-  # You can update Home Manager without changing this value. See
-  # the Home Manager release notes for a list of state version
-  # changes in each release.
-  home.stateVersion = "22.05";
-
+  home.stateVersion  = "22.05";
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-
-  ### slm started here
-
+  #--------------------------------------------------------------------------------
+  # config by slm
+  #
   home.packages = with pkgs; [
     btop
     cmatrix
@@ -33,58 +23,80 @@
     lsd
     powerline-fonts
     xorg.xeyes
-    # zsh-history
   ];
 
-  programs.bash = {
-    enable = true;
-    shellAliases = {
-      c  = "clear";
-    };
-    initExtra = ''
-      #
-      # declared in home.nix with programs.bash.initExtra / slm
-      #
-      neofetch
-      set -o vi
-    '';
-  };
-
+  #--------------------------------------------------------------------------------
+  # zsh configuration
+  #
   programs.zsh = {
     enable = true;
+
+    dotDir = ".config/zsh";
+
+    localVariables = {
+      POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD="true";
+    };
+
     shellAliases = {
       c  = "clear";
       cp = "cp -i";
       ls = "lsd";
       mv = "mv -i";
       rm = "rm -i";
-      # ls = "ls --color=tty";
     };
+
+    history = {
+      size = 100000;
+      path = "${config.xdg.dataHome}/zsh/history";
+    };
+
     zplug = {
       enable = true;
       plugins = [
-        # { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
         { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
         { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
-
       ];
     };
-    initExtra = ''
+
+  initExtra = ''
       #
       # declared in home.nix with programs.zsh.initExtra / slm
       #
+      echo "config.xdg.configHome = ${config.xdg.configHome} ...."
+      echo "config.xdg.dataHome   = ${config.xdg.dataHome} ...."
 
-      # slm trick
-      source $HOME/ws/zsh-nix-shell/.config/zsh/zshrc
-      source $HOME/.p10k.zsh
+      source ${config.xdg.configHome}/zsh/slm-zshrc
 
-      # nice terminal colorscheme
+      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
+      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
+
+      source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
+
+      # nice terminal colorscheme / papercolor-dark jellybeans dracula
       /usr/bin/theme.sh dracula
-      #/usr/bin/theme.sh papercolor-dark
-      # /usr/bin/theme.sh jellybeans
+
+      # fzf with <ctrl>-r in viins and vicmd mode
+      zvm_bindkey viins '^R' fzf-history-widget
+      zvm_bindkey vicmd '^R' fzf-history-widget
+      bindkey -M vicmd '^R' fzf-history-widget
+      bindkey -M viins '^R' fzf-history-widget
+
+      # Use vim keys in tab complete menu:
+      zstyle ':completion:*' menu select
+      bindkey -M menuselect 'h' vi-backward-char
+      bindkey -M menuselect 'k' vi-up-line-or-history
+      bindkey -M menuselect 'l' vi-forward-char
+      bindkey -M menuselect 'j' vi-down-line-or-history
+      bindkey -v '^?' backward-delete-char
+
+      # remap caps to escape
+      setxkbmap -option caps:escape
     '';
   };
 
+  #--------------------------------------------------------------------------------
+  # vim configuration
+  #
   programs.vim = {
     enable = true;
     plugins = [
@@ -131,7 +143,9 @@
     '';
   };
 
-  # fzf declaration
+  #--------------------------------------------------------------------------------
+  # fzf configuration
+  #
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
@@ -142,8 +156,8 @@
   };
 
   # ??? fragezeichen
-  xdg = {
-    enable = true;
-  };
+  #xdg = {
+  #  enable = true;
+  #};
 
 }
