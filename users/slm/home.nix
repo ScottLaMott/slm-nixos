@@ -29,7 +29,10 @@
   # zsh configuration
   #
   programs.zsh = {
+
     enable = true;
+    enableCompletion = true;
+    enableSyntaxHighlighting= true;
 
     dotDir = ".config/zsh";
 
@@ -46,12 +49,14 @@
     };
 
     history = {
+      save = 100000;
       size = 100000;
       path = "${config.xdg.dataHome}/zsh/history";
     };
 
     zplug = {
       enable = true;
+      zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
         { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
         { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
@@ -80,7 +85,7 @@
         ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
       }
       zvm_config
-      # fzf with <CTRL>-r,  in viins and vicmd mode
+      # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
       # Use vim keys in tab complete menu:
