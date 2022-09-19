@@ -73,9 +73,14 @@
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      /usr/bin/theme.sh ir-black
+      /usr/bin/theme.sh black-metal-venom
 
-      # fzf with <ctrl>-r in viins and vicmd mode
+      # init function for zvm
+      function zvm_config() {
+        ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
+      }
+      zvm_config
+      # fzf with <ctrl>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
       # Use vim keys in tab complete menu:
