@@ -72,14 +72,11 @@
 
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
-      # nice terminal colorscheme / papercolor-dark jellybeans dracula
-      /usr/bin/theme.sh dracula
+      # set terminal colorscheme --> papercolor-dark jellybeans dracula
+      /usr/bin/theme.sh ir-black
 
       # fzf with <ctrl>-r in viins and vicmd mode
-      zvm_bindkey viins '^R' fzf-history-widget
-      zvm_bindkey vicmd '^R' fzf-history-widget
-      bindkey -M vicmd '^R' fzf-history-widget
-      bindkey -M viins '^R' fzf-history-widget
+      zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
       # Use vim keys in tab complete menu:
       zstyle ':completion:*' menu select
@@ -100,13 +97,16 @@
   programs.vim = {
     enable = true;
     plugins = [
+      # colorscheme
       pkgs.vimPlugins.dracula-vim
       pkgs.vimPlugins.gruvbox
       pkgs.vimPlugins.jellybeans-vim
-      pkgs.vimPlugins.markdown-preview-nvim
       pkgs.vimPlugins.nord-vim
+      # airline
       pkgs.vimPlugins.vim-airline
       pkgs.vimPlugins.vim-airline-themes
+      # the best of the rest
+      pkgs.vimPlugins.markdown-preview-nvim
       pkgs.vimPlugins.vim-nix
       pkgs.vimPlugins.vim-vinegar
       pkgs.vimPlugins.vim-fugitive
@@ -133,10 +133,8 @@
       let netrw_liststyle="2"
       let netrw_sizestyle="H"
 
-      " vim-airline settings
-      " let g:airline_theme="bubblegum"
-      " let g:airline_theme="violet"
-      let g:airline_theme="alduin"
+      " set vim-airline --> "bubblegum" "violet" "alduin"
+      let g:airline_theme="bubblegum"
 
       " set colors --> gruvbox nord jellybeans
       colorscheme jellybeans
