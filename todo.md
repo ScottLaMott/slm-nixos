@@ -2,7 +2,6 @@
 ---
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
-  - konflikt mit fzf
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - git integragtion
 - zsh aufruf dauert lange, powerlevel10k
@@ -31,6 +30,9 @@
   - resolution auf 1600x900 gesetzt, das ist die lösung für kleine schrift in brave usw.
 
 - zsh login-shell als default-shell
+
+- zvm, zsh-vi-mode-plugin verbessern
+  - in home.nix bei programs.zsh.initExtra
 
 #### to-read
 - nix manual
