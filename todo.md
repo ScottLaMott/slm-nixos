@@ -1,10 +1,13 @@
 ### nixos
 ---
+
+### todo very first
+- git integragtion mit links
+
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
-- git integragtion
 - zsh aufruf dauert lange, powerlevel10k
   - mit zprof untersuchen
 
@@ -13,7 +16,7 @@
 - display acceleration
   - `vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
-- farbige man-pages
+- ranger vorschau
 
 ### done
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
@@ -34,6 +37,9 @@
 
 - zvm, zsh-vi-mode-plugin verbessern
   - in home.nix bei programs.zsh.initExtra
+
+- farbige man-pages
+  durch terminal colors gelöst
 
 #### to-read
 - nix manual
