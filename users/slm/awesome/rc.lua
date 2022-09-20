@@ -48,6 +48,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 beautiful.font = "DejaVu Sans Mono 9"
 beautiful.useless_gap = 4
+beautiful.wallpaper = "/home/slm/.local/share/wallpapers/slm-wallpapers/animals/leopard-baum.jpg"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
