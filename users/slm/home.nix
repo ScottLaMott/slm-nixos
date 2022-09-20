@@ -13,7 +13,7 @@
   # config by slm
   #
   home.packages = with pkgs; [
-    btop cmatrix feh figlet gdu gnupg kitty lsd neovim powerline-fonts xorg.xeyes
+    btop cmatrix feh figlet gdu gnupg ipcalc kitty lsd neovim powerline-fonts xorg.xeyes
   ];
 
   #--------------------------------------------------------------------------------
