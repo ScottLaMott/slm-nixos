@@ -68,8 +68,9 @@
 
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
-      # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      /usr/bin/theme.sh black-metal-mayhem
+      # set terminal colorscheme --> papercolor-dark jellybeans dracula 
+      # black-metal-mayhem
+      /usr/bin/theme.sh summerfruit-dark
 
       # init function for zvm
       function zvm_config() {
