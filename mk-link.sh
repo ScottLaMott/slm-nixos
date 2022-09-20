@@ -26,3 +26,8 @@ mkdir -p $HOME/.config/awesome
 pushd $HOME/.config/awesome
 ln -s $HOME/ws/slm-nixos/users/slm/awesome/rc.lua rc.lua
 popd 
+
+# ranger configuration
+pushd $HOME/.config
+ln -s $HOME/ws/slm-nixos/users/slm/ranger ranger
+popd 
