@@ -1,6 +1,7 @@
 # slm-nixos
 ---
 ## protokoll, unvollständig
+  - symlinks für /etc/nixos/configuration.nix und ~/.config/nixpkgs/home.nix erstellt
   - Home-Manager systemweit installiert
 
   - Terminal alacritty mit lokaler Konfigurationsatei in **.config/alacritty/alacritty.yml**, nicht mit nix gebaut
