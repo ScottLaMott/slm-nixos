@@ -70,7 +70,7 @@
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula 
       # black-metal-mayhem
-      /usr/bin/theme.sh summerfruit-dark
+      /usr/bin/theme.sh black-metal-nile
 
       # init function for zvm
       function zvm_config() {
