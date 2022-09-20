@@ -3,6 +3,7 @@
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
+- zplug (ZPLUG-Variabelen checken, .zplug, ...)
 - git integragtion
 - zsh aufruf dauert lange, powerlevel10k
   - mit zprof untersuchen
