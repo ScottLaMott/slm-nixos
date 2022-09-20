@@ -13,16 +13,7 @@
   # config by slm
   #
   home.packages = with pkgs; [
-    btop
-    cmatrix
-    feh
-    figlet
-    gdu
-    gnupg
-    kitty
-    lsd
-    powerline-fonts
-    xorg.xeyes
+    btop cmatrix feh figlet gdu gnupg kitty lsd neovim powerline-fonts xorg.xeyes
   ];
 
   #--------------------------------------------------------------------------------
@@ -78,7 +69,7 @@
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      /usr/bin/theme.sh black-metal-venom
+      /usr/bin/theme.sh black-metal-mayhem
 
       # init function for zvm
       function zvm_config() {
@@ -106,21 +97,20 @@
   #
   programs.vim = {
     enable = true;
-    plugins = [
+    plugins = with pkgs; [
       # colorscheme
-      pkgs.vimPlugins.dracula-vim
-      pkgs.vimPlugins.gruvbox
-      pkgs.vimPlugins.jellybeans-vim
-      pkgs.vimPlugins.nord-vim
+      vimPlugins.dracula-vim vimPlugins.gruvbox vimPlugins.jellybeans-vim vimPlugins.nord-vim
+
       # airline
-      pkgs.vimPlugins.vim-airline
-      pkgs.vimPlugins.vim-airline-themes
+      vimPlugins.vim-airline vimPlugins.vim-airline-themes
+
       # the best of the rest
-      pkgs.vimPlugins.markdown-preview-nvim
-      pkgs.vimPlugins.vim-nix
-      pkgs.vimPlugins.vim-vinegar
-      pkgs.vimPlugins.vim-fugitive
+      vimPlugins.markdown-preview-nvim
+      vimPlugins.vim-nix
+      vimPlugins.vim-vinegar
+      vimPlugins.vim-fugitive
     ];
+
     settings = {
       number = true;
       relativenumber  = true;
@@ -128,12 +118,13 @@
       shiftwidth = 2;
       tabstop = 2;
     };
+
     extraConfig  = ''
       "--------------------------------------------------------------------------------
       " declared in home.nix / by slm
       "
       " settings
-      set background=dark
+      " set background=dark
       set scrolloff=10
       set cursorline
       set noswapfile

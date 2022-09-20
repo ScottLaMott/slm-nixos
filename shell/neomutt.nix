@@ -12,9 +12,14 @@ mkShell {
     echo ".... shellHook ......................................."
     echo ""
     echo "hello neomutt shell ..."
-    echo "set neomutt in prompt please ..."
+
+    # set zsh-nix-shell in prompt
+    export HOST=neomutt-nix-shell
+    
     #
     export EDITOR=vim
+    echo "run neomutt ..."
+    # exec -a neomutt neomutt
     # 
   '';
 }

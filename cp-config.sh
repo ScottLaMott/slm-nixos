@@ -11,5 +11,4 @@ cp ~/.config/alacritty/alacritty.yml      ~/ws/slm-nixos/users/slm/alacritty/ala
 cp -r ~/.config/nixpkgs/mutt.nix          ~/ws/slm-nixos/shell
 cp -r ~/.config/nixpkgs/neomutt.nix       ~/ws/slm-nixos/shell
 cp -r ~/.config/nixpkgs/thunderbird.nix   ~/ws/slm-nixos/shell
-
 cp -r ~/.config/nixpkgs/spotify.nix       ~/ws/slm-nixos/shell
