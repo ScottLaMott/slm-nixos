@@ -17,6 +17,7 @@
 
   - zsh-vi-mode plugin installiert (bessere vi-unterstützung in zsh)
     - in das $HOME/.zplug/repos verzeichnis
+    - Init-Funktion für zvm-vi-mode home.nix
 
   - powerlevel10k plugin installiert (prompt)
     - in das $HOME/.zplug/repos verzeichnis
