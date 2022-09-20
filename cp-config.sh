@@ -4,8 +4,9 @@
 cp -r ~/.config/nixpkgs/home.nix          ~/ws/slm-nixos/users/slm
 cp -r ~/.config/nixpkgs/config.nix        ~/ws/slm-nixos/users/slm
 
-cp ~/.config/awesome/rc.lua               ~/ws/slm-nixos/users/slm/awesome/rc.lua
-cp ~/.config/alacritty/alacritty.yml      ~/ws/slm-nixos/users/slm/alacritty/alacritty.yml
+cp -r ~/.config/awesome                   ~/ws/slm-nixos/users/slm
+cp -r ~/.config/alacritty                 ~/ws/slm-nixos/users/slm
+cp -r ~/.config/git                       ~/ws/slm-nixos/users/slm
 
 # nix-shells
 cp -r ~/.config/nixpkgs/mutt.nix          ~/ws/slm-nixos/shell
