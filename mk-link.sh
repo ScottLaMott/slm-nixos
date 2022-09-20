@@ -5,29 +5,35 @@
 pushd /etc/nixos
 echo $(pwd)
 ln -s $HOME/ws/slm-nixos/system/configuration.nix configuration.nix
-popd 
+popd
 
 # -----------------------------------------------------------
 # nix user configuration
 pushd $HOME/.config/nixpkgs
 ln -s $HOME/ws/slm-nixos/users/slm/home.nix   home.nix
 ln -s $HOME/ws/slm-nixos/users/slm/config.nix config.nix
-popd 
+popd
 
 # -----------------------------------------------------------
 # alacritty configuration
 mkdir -p $HOME/.config/alacritty
 pushd $HOME/.config/alacritty
 ln -s $HOME/ws/slm-nixos/users/slm/alacritty/alacritty.yml alacritty.yml
-popd 
+popd
 
 # awesome configuration
 mkdir -p $HOME/.config/awesome
 pushd $HOME/.config/awesome
 ln -s $HOME/ws/slm-nixos/users/slm/awesome/rc.lua rc.lua
-popd 
+popd
+
+# git configuration
+mkdir -p $HOME/.config/git
+pushd $HOME/.config/git
+ln -s $HOME/ws/slm-nixos/users/slm/git/config config
+popd
 
 # ranger configuration
 pushd $HOME/.config
 ln -s $HOME/ws/slm-nixos/users/slm/ranger ranger
-popd 
+popd
