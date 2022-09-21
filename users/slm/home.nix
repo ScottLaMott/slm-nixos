@@ -58,7 +58,7 @@
       #--------------------------------------------------------------------------------
       # declared in home.nix with programs.zsh.initExtra / slm
       #
-      
+
       # echo "start zsh/zprof ..."
       # zmodload zsh/zprof
 
@@ -72,7 +72,7 @@
       [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
 
-      # source powerlevel prompt 
+      # source powerlevel prompt
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
@@ -87,9 +87,17 @@
       # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
+# slm ###################
+# Jump to begin of line / insert mode command line history
+zle-history-line-set () {
+    zle vi-beginning-of-line;
+}
+zle -N zle-history-line-set
+
+
       # zsh completion
       zmodload zsh/complist
-      
+
       # Use vim keys in tab complete menu:
       zstyle ':completion:*' menu select
       bindkey -M menuselect 'h' vi-backward-char
@@ -100,7 +108,7 @@
 
       # remap caps to escape
       setxkbmap -option caps:escape
-      
+
       # echo "stop zsh/zprof ..."
       # zprof
     '';
