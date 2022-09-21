@@ -24,7 +24,7 @@
     enable = true;
     enableCompletion = true;
     enableSyntaxHighlighting= true;
-
+    defaultKeymap = "viins";
     dotDir = ".config/zsh";
 
     localVariables = {
@@ -58,23 +58,26 @@
       #--------------------------------------------------------------------------------
       # declared in home.nix with programs.zsh.initExtra / slm
       #
-      echo "start zsh/zprof ..."
-      zmodload zsh/zprof
+      
+      # echo "start zsh/zprof ..."
+      # zmodload zsh/zprof
+
       echo
       echo "config.xdg.configHome = ${config.xdg.configHome} ...."
       echo "config.xdg.dataHome   = ${config.xdg.dataHome} ...."
       echo
 
-      source ${config.xdg.configHome}/zsh/slm-zshrc
+      # source ${config.xdg.configHome}/zsh/slm-zshrc
 
       [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
 
+      # source powerlevel prompt 
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      # black-metal-mayhem
-      /usr/bin/theme.sh black-metal-nile
+      # black-metal-nile
+      /usr/bin/theme.sh summerfruit-dark
 
       # init function for zvm
       function zvm_config() {
@@ -97,8 +100,9 @@
 
       # remap caps to escape
       setxkbmap -option caps:escape
-      echo "stop zsh/zprof ..."
-      zprof
+      
+      # echo "stop zsh/zprof ..."
+      # zprof
     '';
   };
 

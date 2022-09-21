@@ -1,6 +1,8 @@
 # slm-nixos
 ---
 ## protokoll, unvollständig
+  - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller. 
+    
   - symlinks für /etc/nixos/configuration.nix und ~/.config/nixpkgs/home.nix erstellt
   - Home-Manager systemweit installiert
 
