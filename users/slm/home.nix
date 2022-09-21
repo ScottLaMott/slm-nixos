@@ -58,8 +58,12 @@
       #--------------------------------------------------------------------------------
       # declared in home.nix with programs.zsh.initExtra / slm
       #
+      echo "start zsh/zprof ..."
+      zmodload zsh/zprof
+      echo
       echo "config.xdg.configHome = ${config.xdg.configHome} ...."
       echo "config.xdg.dataHome   = ${config.xdg.dataHome} ...."
+      echo
 
       source ${config.xdg.configHome}/zsh/slm-zshrc
 
@@ -68,7 +72,7 @@
 
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
-      # set terminal colorscheme --> papercolor-dark jellybeans dracula 
+      # set terminal colorscheme --> papercolor-dark jellybeans dracula
       # black-metal-mayhem
       /usr/bin/theme.sh black-metal-nile
 
@@ -80,6 +84,9 @@
       # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
+      # zsh completion
+      zmodload zsh/complist
+      
       # Use vim keys in tab complete menu:
       zstyle ':completion:*' menu select
       bindkey -M menuselect 'h' vi-backward-char
@@ -90,6 +97,8 @@
 
       # remap caps to escape
       setxkbmap -option caps:escape
+      echo "stop zsh/zprof ..."
+      zprof
     '';
   };
 
