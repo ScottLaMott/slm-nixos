@@ -142,8 +142,6 @@
 
   # shell environment
   programs.vim.defaultEditor = true;
-  # enable zsh
-  programs.zsh.enable = true;
 
   # List services that you want to enable:
 
