@@ -36,16 +36,17 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.windowManager.awesome.enable = true;
-  services.xserver.windowManager.dwm.enable = true;
-  #services.xserver.windowManager.dwm.enable = true;
   services.xserver.resolutions = [
     {
-      x = 2048; y = 1152;
+      x = 1600; y = 900;
     }
   ];
-
+  # Enable window manager
+  services.xserver.windowManager.awesome.enable = true;
+  services.xserver.windowManager.dwm.enable = true;
   # Enable the Cinnamon Desktop Environment.
+  # ....
+  # Enable login manager
   services.xserver.displayManager.lightdm.enable = true;
 
   # test -remove until dash- services.xserver.videoDrivers = [ "intel" ];
@@ -89,6 +90,7 @@
   users.users.slm.isNormalUser = true;
   users.users.slm.description = "Scott LaMott";
   users.users.slm.extraGroups = [ "networkmanager" "wheel" ];
+  users.users.slm.shell = pkgs.zsh;
 
   # test user
   users.users.guest.isNormalUser = true;
@@ -102,7 +104,9 @@
   # search wget
   environment.systemPackages = with pkgs; [
    alacritty
+   bat
    brave
+   curl
    dmenu
    fd
    file
@@ -113,14 +117,22 @@
    killall
    nmap
    neofetch
+   pulsemixer
+   python
    ranger
    ripgrep
+   speedtest-cli
+   stow
    tmux
    tree
-  # move to user environment later / slm
-   lukesmithxyz-st
-
+   tldr
+   wget
   ];
+
+  # add zsh to /etc/shells
+  environment.shells = with pkgs; [ zsh ];
+  # needed for system package completion
+  environment.pathsToLink = [ "/share/zsh" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions. programs.mtr.enable = true;
@@ -130,6 +142,8 @@
 
   # shell environment
   programs.vim.defaultEditor = true;
+  # enable zsh
+  programs.zsh.enable = true;
 
   # List services that you want to enable:
 
