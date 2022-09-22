@@ -13,7 +13,8 @@
   # config by slm
   #
   home.packages = with pkgs; [
-    btop cmatrix feh figlet gdu gnupg ipcalc kitty lsd neovim powerline-fonts xorg.xeyes
+    btop cmatrix feh figlet gdu gnupg ipcalc kitty lsd
+    minicom neovim powerline-fonts sxiv w3m xorg.xeyes zathura
   ];
 
   #--------------------------------------------------------------------------------
@@ -37,6 +38,8 @@
       ls = "lsd";
       mv = "mv -i";
       rm = "rm -i";
+      # quit ranger to current direcotry
+      # not working correct / slm / ranger="ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir)";
     };
 
     history = {
