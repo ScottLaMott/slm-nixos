@@ -89,7 +89,7 @@
   #  user account for slm / Scott LaMott
   users.users.slm.isNormalUser = true;
   users.users.slm.description = "Scott LaMott";
-  users.users.slm.extraGroups = [ "networkmanager" "wheel" ];
+  users.users.slm.extraGroups = [ "networkmanager" "wheel" "dialout" ];
   users.users.slm.shell = pkgs.zsh;
 
   # test user
