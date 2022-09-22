@@ -1,15 +1,15 @@
-### nixos
----
+# TODO
 
 ### todo very first
 - git integragtion mit links
+  - ist in arbeit
+  - git-crypt für passwörter und secrets
+  - fernziel stow ???
 
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
-- zsh aufruf dauert lange, powerlevel10k
-  - mit zprof untersuchen
 
 ### todo
 - nixos auf bare-metal
@@ -17,6 +17,8 @@
   - `vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
 - ranger vorschau
+  - w3mimagedisplay kann nicht aufgrufen werden, geht nicht in alacritty ???
+  - ueberzug versuchen 
 
 ### done
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
@@ -34,6 +36,10 @@
   - resolution auf 1600x900 gesetzt, das ist die lösung für kleine schrift in brave usw.
 
 - zsh login-shell als default-shell
+
+- zsh aufruf dauert lange, powerlevel10k
+  - Ursache: program.zsh.enable in Systemkonfiguration (/etc/nixos/configuration.nix) und Userkonfigurations (home-manager)
+  - Lösung: zsh in home-manager enabled
 
 - zvm, zsh-vi-mode-plugin verbessern
   - in home.nix bei programs.zsh.initExtra
