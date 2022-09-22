@@ -1,9 +1,13 @@
-# slm-nixos
+slm-nixos
 ---
+Repository für mein NIXOS-System.
+- /etc/nixos/configuration.nix
+- Benutzerkonfiguration mit Home-Manager
+
 ## protokoll, unvollständig
-  - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller. 
-    - https://nixos.wiki/wiki/Home_Manager ## md link machen
-    
+  - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller.
+    - https://nixos.wiki/wiki/Home-Manager ## md link machen
+
   - symlinks für /etc/nixos/configuration.nix und ~/.config/nixpkgs/home.nix erstellt
   - Home-Manager systemweit installiert
 
@@ -26,6 +30,6 @@
   - powerlevel10k plugin installiert (prompt)
     - in das $HOME/.zplug/repos verzeichnis
 
-## fragen und antworten
-  f - sind .nix dateien konfigurationsdateien ?
-  a - yes, irgendwie schon, sie sind aber auch quellcode
+## Fragen und Antworten
+Q: Sind .nix Dateien Konfigurationsdateien ?<br>
+A: ja, irgendwie schon, sie sind aber auch Quellcode.<br>
