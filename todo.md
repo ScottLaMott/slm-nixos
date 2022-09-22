@@ -18,8 +18,9 @@
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
 - ranger vorschau
   - w3mimagedisplay kann nicht aufgrufen werden, geht nicht in alacritty ???
-  - ueberzug versuchen 
-
+  - ueberzug versuchen
+  - colorschemes, in welchem verzeichnis müssen die colorschemes hinterlegt werden
+    https://github.com/ranger/ranger/issues/1194
 ### done
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
   - markdown-preview-nvim

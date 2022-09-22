@@ -5,6 +5,7 @@ Repository für mein NIXOS-System.
 - Benutzerkonfiguration mit Home-Manager
 
 ## protokoll, unvollständig
+  - fonts in awesome config eingestellt, Hack schaut gut aus
   - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller.
     - https://nixos.wiki/wiki/Home-Manager ## md link machen
 
