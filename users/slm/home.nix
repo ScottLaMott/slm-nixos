@@ -179,9 +179,9 @@ zle -N zle-history-line-set
       ];
   };
 
-  # ??? fragezeichen
-  #xdg = {
-  #  enable = true;
-  #};
+  # ???
+  xdg = {
+    enable = true;
+  };
 
 }
