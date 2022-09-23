@@ -13,6 +13,7 @@
 
 ### todo
 - nixos auf bare-metal
+- rofi installieren
 - display acceleration
   - `vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
