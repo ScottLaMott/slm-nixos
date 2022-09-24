@@ -12,6 +12,8 @@
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
 
 ### todo
+- passsword manager
+- slm-art in github einchecken
 - nixos auf bare-metal
 - rofi installieren
 - display acceleration
