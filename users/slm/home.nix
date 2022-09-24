@@ -14,7 +14,8 @@
   #
   home.packages = with pkgs; [
     btop cmatrix feh figlet gdu gnupg ipcalc kitty lsd
-    minicom neovim powerline-fonts sxiv w3m xorg.xeyes zathura
+    minicom neovim powerline-fonts sxiv spotifyd spotify-tui
+    w3m xorg.xeyes zathura
   ];
 
   #--------------------------------------------------------------------------------
@@ -38,6 +39,7 @@
       ls = "lsd";
       mv = "mv -i";
       rm = "rm -i";
+      v  = "vim";
       # quit ranger to current direcotry
       # not working correct / slm / ranger="ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir)";
     };
@@ -150,9 +152,10 @@ zle -N zle-history-line-set
       "
       " settings
       " set background=dark
-      set scrolloff=10
+      set scrolloff=5
       set cursorline
       set noswapfile
+      set splitbelow
 
       " netrw settings
       let netrw_banner="1"
@@ -186,4 +189,15 @@ zle -N zle-history-line-set
     enable = true;
   };
 
+  #--------------------------------------------------------------------------------
+  # spotifyd service
+  #
+  services.spotifyd.enable = true;
+  services.spotifyd.settings = {
+    global = {
+      username    = "ScottLaMott";
+      password    = "lnukm-uasa";
+      device_name = "nixos";
+    };
+  };
 }
