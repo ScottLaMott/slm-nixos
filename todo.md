@@ -21,7 +21,9 @@
   - w3mimagedisplay kann nicht aufgrufen werden, geht nicht in alacritty ???
   - ueberzug versuchen
   - colorschemes, in welchem verzeichnis müssen die colorschemes hinterlegt werden
-    https://github.com/ranger/ranger/issues/1194
+    - colorschemes brauchen py endung
+    - git, python bytecode nicht einchecken
+
 ### done
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
   - markdown-preview-nvim
@@ -47,7 +49,7 @@
   - in home.nix bei programs.zsh.initExtra
 
 - farbige man-pages
-  durch terminal colors gelöst
+  durch terminal colors gelöst, nein slm-plugin wird gebraucht
 
 #### to-read
 - nix manual
