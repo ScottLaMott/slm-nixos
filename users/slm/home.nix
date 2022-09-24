@@ -81,8 +81,8 @@
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      # black-metal-nile
-      /usr/bin/theme.sh summerfruit-dark
+      # black-metal-nile summerfruit-dark
+      /usr/bin/theme.sh one-dark
 
       # init function for zvm
       function zvm_config() {
@@ -91,14 +91,6 @@
       zvm_config
       # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
-
-# slm ###################
-# Jump to begin of line / insert mode command line history
-zle-history-line-set () {
-    zle vi-beginning-of-line;
-}
-zle -N zle-history-line-set
-
 
       # zsh completion
       zmodload zsh/complist
@@ -147,7 +139,7 @@ zle -N zle-history-line-set
     };
 
     extraConfig  = ''
-      "--------------------------------------------------------------------------------
+      """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
       " declared in home.nix / by slm
       "
       " settings
