@@ -82,7 +82,7 @@
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
       # black-metal-nile summerfruit-dark
-      /usr/bin/theme.sh one-dark
+      /usr/bin/theme.sh black-metal-nile
 
       # init function for zvm
       function zvm_config() {
@@ -119,6 +119,7 @@
     plugins = with pkgs; [
       # colorscheme
       vimPlugins.dracula-vim vimPlugins.gruvbox vimPlugins.jellybeans-vim vimPlugins.nord-vim
+      vimPlugins.vim-monokai
 
       # airline
       vimPlugins.vim-airline vimPlugins.vim-airline-themes
@@ -160,8 +161,7 @@
       let g:airline_theme="bubblegum"
 
       " set colors --> gruvbox nord jellybeans
-
-      colorscheme jellybeans
+      colorscheme monokai
 
       " source slm-maps.vim
       source $HOME/ws/slm-nixos/tmp/dotfiles/vim/.vim/maps.vim
