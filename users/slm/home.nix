@@ -64,9 +64,6 @@
       # declared in home.nix with programs.zsh.initExtra / slm
       #
 
-      # echo "start zsh/zprof ..."
-      # zmodload zsh/zprof
-
       echo
       echo "config.xdg.configHome = ${config.xdg.configHome} ...."
       echo "config.xdg.dataHome   = ${config.xdg.dataHome} ...."
@@ -106,8 +103,7 @@
       # remap caps to escape
       setxkbmap -option caps:escape
 
-      # echo "stop zsh/zprof ..."
-      # zprof
+      #--------------------------------------------------------------------------------
     '';
   };
 
@@ -145,26 +141,15 @@
       """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
       " declared in home.nix / by slm
       "
-      " settings
-      " set background=dark
-      set scrolloff=5
-      set cursorline
-      set noswapfile
-      set splitbelow
 
-      " netrw settings
-      let netrw_banner="1"
-      let netrw_liststyle="2"
-      let netrw_sizestyle="H"
-
-      " set vim-airline --> "bubblegum" "violet" "alduin"
-      let g:airline_theme="bubblegum"
+      " source slm settings
+      source ${config.xdg.configHome}/vim/settings.vim
+      " source slm mappings
+      source ${config.xdg.configHome}/vim/maps.vim
 
       " set colors --> gruvbox nord jellybeans
       colorscheme monokai
-
-      " source slm-maps.vim
-      source $HOME/ws/slm-nixos/tmp/dotfiles/vim/.vim/maps.vim
+      """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     '';
   };
 
