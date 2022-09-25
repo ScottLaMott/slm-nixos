@@ -21,7 +21,7 @@ set clipboard+=unnamedplus            " use system clipboard
 set scrolloff=5
 set cmdheight=0
 set cursorline
-set nomodeline                        " we have airline
+set noshowmode
 set noswapfile
 set splitbelow                        " split window to the bottom
 set splitright			                  " split window to the right
