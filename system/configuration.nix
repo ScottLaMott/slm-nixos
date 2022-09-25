@@ -154,6 +154,6 @@
   # fonts.fontconfig.enable = true;
   # fonts.fontconfig.localConf = "FiraCode";
   fonts.fonts = with pkgs; [
-      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+      (nerdfonts.override { fonts = [ "Hack" "FiraCode" "DroidSansMono" ]; })
     ];
 }
