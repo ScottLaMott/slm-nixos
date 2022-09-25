@@ -48,7 +48,9 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 beautiful.font = "DejaVu Sans Mono 9"
 beautiful.useless_gap = 4
+-- change to $HOME ???
 beautiful.wallpaper = "/home/slm/.local/share/wallpapers/slm-wallpapers/animals/leopard-full.jpg"
+-- beautiful.wallpaper = "/home/slm/.local/share/wallpapers/wallpaper-absyss/matirx.jpg"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
@@ -172,7 +174,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1-workspace", "2-brave", "3-control", "4-ranger", "5-", "6-", "7-", "8-fun", "9-nixos" }, s, awful.layout.layouts[1])
+    awful.tag({ "1-workspace", "2-brave", "3-control", "4-ranger", "5-", "6-", "7-spotify", "8-fun", "9-nixos" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
