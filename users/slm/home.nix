@@ -13,7 +13,7 @@
   # config by slm
   #
   home.packages = with pkgs; [
-    btop cmatrix feh figlet gdu gnupg ipcalc kitty lsd
+    btop cmatrix cheat feh figlet gdu gnupg ipcalc kitty lsd
     minicom neovim powerline-fonts sxiv spotifyd spotify-tui
     w3m xorg.xeyes zathura
   ];
@@ -124,8 +124,10 @@
       vimPlugins.vim-airline vimPlugins.vim-airline-themes
 
       # the best of the rest
+      vimPlugins.fzf-vim
       vimPlugins.markdown-preview-nvim
       vimPlugins.vim-nix
+      vimPlugins.vim-startify
       vimPlugins.vim-vinegar
       vimPlugins.vim-fugitive
     ];
@@ -158,7 +160,11 @@
       let g:airline_theme="bubblegum"
 
       " set colors --> gruvbox nord jellybeans
+
       colorscheme jellybeans
+
+      " source slm-maps.vim
+      source $HOME/ws/slm-nixos/tmp/dotfiles/vim/.vim/maps.vim
     '';
   };
 
