@@ -82,7 +82,7 @@
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula
       # black-metal-nile summerfruit-dark
-      /usr/bin/theme.sh black-metal-nile
+      /usr/bin/theme.sh monokai-soda
 
       # init function for zvm
       function zvm_config() {
