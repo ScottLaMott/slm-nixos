@@ -19,7 +19,9 @@ set clipboard+=unnamedplus            " use system clipboard
 
 " set background=dark
 set scrolloff=5
+set cmdheight=0
 set cursorline
+set nomodeline                        " we have airline
 set noswapfile
 set splitbelow                        " split window to the bottom
 set splitright			                  " split window to the right
@@ -29,6 +31,6 @@ let netrw_banner="1"
 let netrw_liststyle="2"
 let netrw_sizestyle="H"
 
-" set vim-airline --> "bubblegum" "violet" "alduin"
-let g:airline_theme="molokai"
+" set vim-airline --> bubblegum violet alduin molokai
+let g:airline_theme="dark_minimal"
 

@@ -129,6 +129,7 @@
       vimPlugins.vim-fugitive
     ];
 
+    # settings managed by home manager
     settings = {
       number = true;
       relativenumber  = true;
