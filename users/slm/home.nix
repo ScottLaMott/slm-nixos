@@ -64,21 +64,16 @@
       # declared in home.nix with programs.zsh.initExtra / slm
       #
 
-      echo
-      echo "config.xdg.configHome = ${config.xdg.configHome} ...."
-      echo "config.xdg.dataHome   = ${config.xdg.dataHome} ...."
-      echo
-
       # source ${config.xdg.configHome}/zsh/slm-zshrc
-
-      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
-      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
 
       # source powerlevel prompt
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
-      # set terminal colorscheme --> papercolor-dark jellybeans dracula
-      # black-metal-nile summerfruit-dark
+      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
+      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
+      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-zsh-vim-mode ]      && source ${config.xdg.dataHome}/zsh/shell/slm-zsh-vim-mode
+
+      # set terminal colorscheme --> papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark
       /usr/bin/theme.sh monokai-soda
 
       # init function for zvm
