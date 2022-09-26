@@ -110,20 +110,14 @@
     enable = true;
     plugins = with pkgs.vimPlugins; [
       # colorscheme
-      dracula-vim gruvbox jellybeans-vim nord-vim
-      vim-monokai
-      #vimPlugins.vim-monokai
+      dracula-vim gruvbox jellybeans-vim nord-vim vim-monokai
 
       # airline
       vim-airline vim-airline-themes
 
       # the best of the rest
-      fzf-vim
-      markdown-preview-nvim
-      vim-nix
-      vim-startify
-      vim-vinegar
-      vim-fugitive
+      fzf-vim  markdown-preview-nvim  vim-nix
+      vim-startify  vim-vinegar  vim-fugitive
     ];
 
     # settings managed by home manager
