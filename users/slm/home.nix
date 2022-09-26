@@ -64,6 +64,7 @@
       # declared in home.nix with programs.zsh.initExtra / slm
       #
 
+      # own zshrc
       # source ${config.xdg.configHome}/zsh/slm-zshrc
 
       # source powerlevel prompt
@@ -107,21 +108,22 @@
   #
   programs.vim = {
     enable = true;
-    plugins = with pkgs; [
+    plugins = with pkgs.vimPlugins; [
       # colorscheme
-      vimPlugins.dracula-vim vimPlugins.gruvbox vimPlugins.jellybeans-vim vimPlugins.nord-vim
-      vimPlugins.vim-monokai
+      dracula-vim gruvbox jellybeans-vim nord-vim
+      vim-monokai
+      #vimPlugins.vim-monokai
 
       # airline
-      vimPlugins.vim-airline vimPlugins.vim-airline-themes
+      vim-airline vim-airline-themes
 
       # the best of the rest
-      vimPlugins.fzf-vim
-      vimPlugins.markdown-preview-nvim
-      vimPlugins.vim-nix
-      vimPlugins.vim-startify
-      vimPlugins.vim-vinegar
-      vimPlugins.vim-fugitive
+      fzf-vim
+      markdown-preview-nvim
+      vim-nix
+      vim-startify
+      vim-vinegar
+      vim-fugitive
     ];
 
     # settings managed by home manager
