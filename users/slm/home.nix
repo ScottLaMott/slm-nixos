@@ -171,7 +171,7 @@
   services.spotifyd.settings = {
     global = {
       username    = "ScottLaMott";
-      password    = "lnukm-uasa";
+      password    = "--- insert pw here ---";
       device_name = "nixos";
     };
   };
