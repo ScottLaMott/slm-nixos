@@ -19,7 +19,7 @@ set clipboard+=unnamedplus            " use system clipboard
 " set background=dark
 set scrolloff=5
 " statusline
-set cmdheight=0
+set cmdheight=1
 set noshowmode
 set cursorline
 set noswapfile
