@@ -9,7 +9,6 @@ set diffopt+=vertical
 filetype plugin indent on
 
 "--- general
-set guicursor=
 " set termguicolors " macht den bildschirm schwarz/weiß
 
 set nobackup
@@ -19,9 +18,10 @@ set clipboard+=unnamedplus            " use system clipboard
 
 " set background=dark
 set scrolloff=5
+" statusline
 set cmdheight=0
-set cursorline
 set noshowmode
+set cursorline
 set noswapfile
 set splitbelow                        " split window to the bottom
 set splitright			                  " split window to the right
