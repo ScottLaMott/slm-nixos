@@ -17,7 +17,8 @@ set path+=**			                    " für z. B. find-ex-command
 set clipboard+=unnamedplus            " use system clipboard
 
 " set background=dark
-set scrolloff=5
+"set scrolloff=5
+set scrolloff=100
 " statusline
 set cmdheight=1
 set noshowmode

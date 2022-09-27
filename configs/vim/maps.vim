@@ -16,6 +16,7 @@ map <leader>b :ls<cr>
 map <leader>ff :FZF!<cr>
 map <leader>f :FZF! -e<cr>
 map <leader>sf :sfind
+map <leader>s :Startify<cr>
 
 "map <leader>j :wincmd j<cr>
 "map <leader>k :wincmd k<cr>
