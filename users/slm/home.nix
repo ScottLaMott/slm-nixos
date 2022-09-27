@@ -34,12 +34,8 @@
     };
 
     shellAliases = {
-      c  = "clear";
-      cp = "cp -i";
-      ls = "lsd";
-      mv = "mv -i";
-      rm = "rm -i";
-      v  = "vim";
+      c="clear";
+
       # quit ranger to current direcotry
       # not working correct / slm / ranger="ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir)";
     };
@@ -70,9 +66,9 @@
       # source powerlevel prompt
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
-      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/shell/slm-aliases
-      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/shell/slm-colored-man-pages
-      [ -f  ${config.xdg.dataHome}/zsh/shell/slm-zsh-vim-mode ]      && source ${config.xdg.dataHome}/zsh/shell/slm-zsh-vim-mode
+      [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
+      [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
+      # [ -f  ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode ]      && source ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark
       /usr/bin/theme.sh monokai-soda
