@@ -1,9 +1,11 @@
 # TODO
 
+## spotify account aendern oder repo privatisieren
+
 ### todo very first
 - git integragtion mit links
   - ist in arbeit
-  - git-crypt für passwörter und secrets
+  - git-crypt für passwörter und secrets, siehe oben
   - fernziel stow ???
 
 ### todo first
@@ -17,7 +19,7 @@
 - nixos auf bare-metal
 - rofi installieren
 - display acceleration
-  - `vainfo' fehler beseitigen
+  - 'vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
 - ranger vorschau
   - w3mimagedisplay kann nicht aufgrufen werden, geht nicht in alacritty ???
