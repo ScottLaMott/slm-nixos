@@ -112,7 +112,7 @@
    htop
    killall
    nmap neofetch
-   pulsemixer python
+   pulsemixer pure-prompt python
    ranger ripgrep
    speedtest-cli stow
    tmux tree tldr
