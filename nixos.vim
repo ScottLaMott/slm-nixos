@@ -4,7 +4,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~
+cd ~/ws/slm-nixos
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -14,22 +14,24 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 ws/slm-nixos/users/slm/home.nix
-badd +1 ws/slm-nixos/system/configuration.nix
-badd +1 ws/slm-nixos/users/slm/awesome/rc.lua
-badd +1 ws/slm-nixos/users/slm/alacritty/alacritty.yml
-badd +1 ws/slm-nixos/users/slm/ranger/rc.conf
+badd +1 users/slm/home.nix
+badd +1 system/configuration.nix
+badd +1 users/slm/awesome/rc.lua
+badd +1 users/slm/alacritty/alacritty.yml
+badd +1 users/slm/ranger/rc.conf
+badd +1 configs/vim/maps.vim
+badd +1 configs/vim/settings.vim
 argglobal
 %argdel
-$argadd ws/slm-nixos/users/slm/home.nix
-$argadd ws/slm-nixos/system/configuration.nix
-$argadd ws/slm-nixos/users/slm/awesome/rc.lua
-$argadd ws/slm-nixos/users/slm/alacritty/alacritty.yml
-$argadd ws/slm-nixos/users/slm/ranger/rc.conf
-edit ws/slm-nixos/system/configuration.nix
+$argadd users/slm/home.nix
+$argadd system/configuration.nix
+$argadd users/slm/awesome/rc.lua
+$argadd users/slm/alacritty/alacritty.yml
+$argadd users/slm/ranger/rc.conf
+$argadd configs/vim/maps.vim
+$argadd configs/vim/settings.vim
+edit users/slm/home.nix
 argglobal
-if bufexists(fnamemodify("ws/slm-nixos/system/configuration.nix", ":p")) | buffer ws/slm-nixos/system/configuration.nix | else | edit ws/slm-nixos/system/configuration.nix | endif
-balt ws/slm-nixos/users/slm/ranger/rc.conf
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -40,13 +42,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 7 - ((6 * winheight(0) + 24) / 48)
+let s:l = 6 - ((5 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
+keepjumps 6
 normal! 0
-lcd ~/ws/slm-nixos
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
