@@ -60,8 +60,8 @@
       # declared in home.nix with programs.zsh.initExtra / slm
       #
 
-      # own zshrc
-      # source ${config.xdg.configHome}/zsh/slm-zshrc
+      # own new slm-zshrc
+      source ${config.xdg.configHome}/zsh/slm-zshrc
 
       # source powerlevel prompt
       source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
@@ -80,17 +80,6 @@
       zvm_config
       # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
-
-      # zsh completion
-      zmodload zsh/complist
-
-      # Use vim keys in tab complete menu:
-      zstyle ':completion:*' menu select
-      bindkey -M menuselect 'h' vi-backward-char
-      bindkey -M menuselect 'k' vi-up-line-or-history
-      bindkey -M menuselect 'l' vi-forward-char
-      bindkey -M menuselect 'j' vi-down-line-or-history
-      bindkey -v '^?' backward-delete-char
 
       # remap caps to escape
       setxkbmap -option caps:escape
