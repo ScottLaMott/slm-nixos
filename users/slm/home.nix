@@ -78,6 +78,7 @@
         ZVM_LINE_INIT_MODE=$ZVM_MODE_INSERT
       }
       zvm_config
+
       # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
       zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
 
