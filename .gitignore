@@ -1,7 +1,7 @@
 result
 supercooles-zsh-script.zsh
 supercooles-zsh-script.figlet.zsh
-zvm-config-slm.zsh
+_zvm-config-slm.zsh
 system/hardware-configuration.nix
 
 tmp
