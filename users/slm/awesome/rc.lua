@@ -46,11 +46,16 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "/home/slm/.config/awesome/theme.lua")
 beautiful.font = "DejaVu Sans Mono 9"
 beautiful.useless_gap = 4
+-- beautiful.border_normal  = "white"
+-- beautiful.border_focus   = "green"
+-- beautiful.border_marked  = "blue"
+
 -- change to $HOME ???
-beautiful.wallpaper = "/home/slm/.local/share/wallpapers/slm-wallpapers/animals/leopard-full.jpg"
--- beautiful.wallpaper = "/home/slm/.local/share/wallpapers/wallpaper-absyss/matirx.jpg"
+beautiful.wallpaper = "/home/slm/.local/share/wallpapers/bg-images/current-wallpaper"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
