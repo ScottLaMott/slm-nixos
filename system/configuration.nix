@@ -114,7 +114,7 @@
    nmap neofetch
    pulsemixer pure-prompt python
    ranger ripgrep
-   speedtest-cli stow
+   screen speedtest-cli stow
    tmux tree tldr
    wget
   ];
