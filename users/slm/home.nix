@@ -50,7 +50,7 @@
       enable = true;
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
-        # { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
+        { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
         { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
       ];
     };
@@ -64,7 +64,7 @@
       source ${config.xdg.configHome}/zsh/slm-zshrc
 
       # source powerlevel prompt
-      # source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
+      source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]           && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ] && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
