@@ -15,8 +15,6 @@
   boot.loader.grub.useOSProber = true;
 
   networking.hostName = "nixos-one"; # Define your hostname.
-  # networking.wireless.enable = true; # Enables wireless support via
-  # wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -44,20 +42,8 @@
   # Enable window manager
   services.xserver.windowManager.awesome.enable = true;
   services.xserver.windowManager.dwm.enable = true;
-  # Enable the Cinnamon Desktop Environment.
-  # ....
   # Enable login manager
   services.xserver.displayManager.lightdm.enable = true;
-
-  # test -remove until dash- services.xserver.videoDrivers = [ "intel" ];
-  #services.xserver.videoDrivers = [ "modesetting" ];
-  #services.xserver.useGlamor = true;
-
-  #services.xserver.videoDrivers = [ "intel" ];
-  #services.xserver.deviceSection = ''
-  #  Option "DRI" "2"
-  #  Option "TearFree" "true"
-  #'';
 
   # Configure keymap in X11
   services.xserver = { layout = "de"; xkbVariant = "";
@@ -74,17 +60,10 @@
   security.rtkit.enable = true; services.pipewire = {
     enable = true; alsa.enable = true; alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this jack.enable =
-    #true;
-
-    # use the example session manager (no others are packaged yet so
-    # this is enabled by default, no need to redefine it in your config
-    # for now)
-    #media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  #  services.xserver.libinput.enable = true;
 
   #  user account for slm / Scott LaMott
   users.users.slm.isNormalUser = true;
