@@ -35,9 +35,6 @@
 
     shellAliases = {
       c="clear";
-
-      # quit ranger to current direcotry
-      # not working correct / slm / ranger="ranger --choosedir=$HOME/.rangerdir; cd $(cat $HOME/.rangerdir)";
     };
 
     history = {
