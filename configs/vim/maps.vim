@@ -10,13 +10,13 @@ let mapleader=" "
 
 " ??? map <leader>s :source $HOME/.config/nvim/init.vim<cr>
 
-map <leader>o :only<cr>
-map <leader>q :quit<cr>
-map <leader>b :ls<cr>
+map <leader>o  :only<cr>
+map <leader>q  :quit<cr>
+map <leader>b  :ls<cr>
 map <leader>ff :FZF!<cr>
-map <leader>f :FZF! -e<cr>
+map <leader>f  :FZF! -e<cr>
 map <leader>sf :sfind
-map <leader>s :Startify<cr>
+map <leader>s  :Startify<cr>
 
 "map <leader>j :wincmd j<cr>
 "map <leader>k :wincmd k<cr>
