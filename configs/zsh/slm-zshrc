@@ -1,0 +1,18 @@
+# zsh completion
+zmodload zsh/complist
+
+# Use vim keys in tab complete menu:
+zstyle ':completion:*' menu select
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# enable colors and change prompt:
+autoload -U colors && colors	# Load colors
+
+# prompt
+autoload -Uz promptinit
+#promptinit
+#prompt pure

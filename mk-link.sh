@@ -39,7 +39,13 @@ ln -s $HOME/ws/slm-nixos/users/slm/ranger ranger
 popd
 
 # vim configuration
-pushd $HOME/.config/vim
+ushd $HOME/.config/vim
 ln -s $HOME/ws/slm-nixos/configs/vim/settings.vim settings.vim
 ln -s $HOME/ws/slm-nixos/configs/vim/maps.vim maps.vim
+popd
+
+# zsh configuration
+ushd $HOME/.config/zsh
+pushd $HOME/.config/zsh
+ln -s $HOME/ws/slm-nixos/configs/zsh/slm-zshrc slm-zshrc
 popd
