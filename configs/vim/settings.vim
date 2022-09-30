@@ -9,16 +9,16 @@ set diffopt+=vertical
 filetype plugin indent on
 
 "--- general
-" set termguicolors " macht den bildschirm schwarz/weiß
+set termguicolors " macht den bildschirm schwarz/weiß
 
 set nobackup
 set nowritebackup
 set path+=**			                    " für z. B. find-ex-command
 set clipboard+=unnamedplus            " use system clipboard
 
-" set background=dark
-"set scrolloff=5
+set background=dark
 set scrolloff=100
+
 " statusline
 set cmdheight=1
 set noshowmode
@@ -34,4 +34,3 @@ let netrw_sizestyle="H"
 
 " set vim-airline --> bubblegum violet alduin molokai
 let g:airline_theme="dark_minimal"
-
