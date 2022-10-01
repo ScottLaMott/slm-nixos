@@ -32,9 +32,8 @@
       POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD="true";
     };
 
-    shellAliases = {
-      c="clear";
-    };
+    # aliase, ausgelagert, see slm-aliases
+    shellAliases = { };
 
     history = {
       save = 100000;
@@ -58,9 +57,6 @@
 
       # own new slm-zshrc
       source ${config.xdg.configHome}/zsh/slm-zshrc
-
-      # source powerlevel prompt
-      [ -f ${config.xdg.configHome}/powerlevel10k/.p10k.zsh ]       && source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]            && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
