@@ -51,6 +51,7 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 -- beautiful.font = "DejaVu Sans Mono 9"
 beautiful.font = "Hack 10"
 beautiful.useless_gap = 2
+
 -- beautiful.border_normal  = "white"
 -- beautiful.border_focus   = "green"
 -- beautiful.border_marked  = "blue"
