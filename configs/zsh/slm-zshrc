@@ -15,7 +15,7 @@ bindkey -v '^?' backward-delete-char
 # prompt ------------------------------
 autoload -Uz promptinit
 promptinit
-# prompt adam2
+prompt pure
 
 # slm ---------------------------------
 # Jump to begin of line / insert mode command line history
