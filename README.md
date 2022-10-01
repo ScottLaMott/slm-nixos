@@ -27,7 +27,19 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 <br>
 
 ## Protokoll, unvollständig
-  - Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
+
+- wichtig für fzf/zsh-history, muss in zshrc sein
+```
+# slm ---------------------------------
+# Jump to begin of line / insert mode command line history
+zle-history-line-set () {
+    zle vi-beginning-of-line;
+    zle vi-cmd-mode;
+}
+zle -N zle-history-line-set
+```
+
+- Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
 >
 - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller<br>
 
