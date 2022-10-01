@@ -15,13 +15,14 @@ else
   set shortmess=aoO
 endif
 badd +1 users/slm/home.nix
-badd +1 system/configuration.nix
+badd +49 system/configuration.nix
 badd +1 users/slm/awesome/rc.lua
 badd +1 users/slm/alacritty/alacritty.yml
 badd +1 users/slm/ranger/rc.conf
 badd +1 configs/vim/maps.vim
 badd +1 configs/vim/settings.vim
 badd +19 configs/zsh/slm-zshrc
+badd +1 todo.md
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -33,7 +34,7 @@ $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
 edit users/slm/home.nix
 argglobal
-balt configs/zsh/slm-zshrc
+balt todo.md
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -44,7 +45,7 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 22) / 45)
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt

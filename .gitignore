@@ -3,5 +3,5 @@ supercooles-zsh-script.zsh
 supercooles-zsh-script.figlet.zsh
 _zvm-config-slm.zsh
 system/hardware-configuration.nix
-
+nixos.vim
 tmp

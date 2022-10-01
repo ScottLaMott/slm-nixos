@@ -12,7 +12,7 @@ let mapleader=" "
 
 map <leader>o  :only<cr>
 map <leader>q  :quit<cr>
-map <leader>b  :ls<cr>
+map <leader>b  :buffers<cr>
 map <leader>ff :FZF!<cr>
 map <leader>f  :FZF! -e<cr>
 map <leader>sf :sfind
