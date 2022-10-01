@@ -20,7 +20,7 @@ alias dfe='df -t ext4'                    # fs-type ext4
 
 # prompt
 alias pp='prompt pure'                    # fs-type ext4
-alias pa='prompt adam2'                    # fs-type ext4
+alias pa='prompt adam2'                   # fs-type ext4
 
 # history
 alias hg='history | grep '
