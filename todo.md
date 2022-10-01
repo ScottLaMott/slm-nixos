@@ -9,12 +9,15 @@
   - fernziel stow ???
 
 ### todo first
+
 - zvm, zsh-vi-mode-plugin verbessern
   -  zsh-vi-mode-plugin verbessern
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
 
 ### todo
+- fehler aufruf vim -S session.vim, fehlermeldung auswerten
+  - lösung: nixos.vim war in .gitignore. folge fd ignoriert dateien in .gitignore
 - passsword manager
 - slm-art in github einchecken
 - nixos auf bare-metal
