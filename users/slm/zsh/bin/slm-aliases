@@ -1,10 +1,10 @@
 #!/bin/sh
 # my alias definitions
-#
-alias cp = "cp -i";
-alias mv = "mv -i";
-alias rm = "rm -i";
-alias v  = "vim";
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias v='vim'
 
 alias pgo='ping -c1 -W5 www.google.com'
 alias p='ping -c 3 -w5'
@@ -15,6 +15,10 @@ alias la='ls -la'
 alias ll='ls -l'
 alias lR='ls -lR'
 alias dfe='df -t ext4'                    # fs-type ext4
+
+# prompt
+alias pp='prompt pure'                    # fs-type ext4
+alias pa='prompt adam2'                    # fs-type ext4
 
 # history
 alias hg='history | grep '
