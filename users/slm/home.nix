@@ -24,36 +24,30 @@
   programs.zsh = {
 
     enable = true;
+    defaultKeymap = "viins";
     enableCompletion = true;
     enableSyntaxHighlighting= true;
     dotDir = ".config/zsh";
-
-    # aliase, ausgelagert, see slm-aliases
-    shellAliases = { };
-
+    shellAliases = { };              # aliase, ausgelagert, see slm-aliases
     history = {
       save = 100000;
       size = 100000;
       path = "${config.xdg.dataHome}/zsh/history";
     };
-
     zplug = {
       enable = true;
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
-        # { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
         # { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration / macht prompt kaputt /slm / IMPORTANT
       ];
     };
-
-  initExtra = ''
+    initExtra = ''
       #--------------------------------------------------------------------------------
       # declared in home.nix with programs.zsh.initExtra / slm
       #
 
       # own new slm-zshrc
-      source ${config.xdg.configHome}/zsh/slm-zshrc
-
+      [ -f  ${config.xdg.configHome}/zsh/slm-zshrc ]                && source ${config.xdg.configHome}/zsh/slm-zshrc
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]            && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
       # [ -f  ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode ]       && source ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode
@@ -66,7 +60,7 @@
 
       #--------------------------------------------------------------------------------
     '';
-  };
+  }; # end programs.zsh -
 
   #--------------------------------------------------------------------------------
   # vim configuration
