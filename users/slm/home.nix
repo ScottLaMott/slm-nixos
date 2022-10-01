@@ -69,9 +69,6 @@
       # set terminal colorscheme --> papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark
       /usr/bin/theme.sh monokai-soda
 
-      # fzf-history-widget with <CTRL>-r,  in viins and vicmd mode
-      # zvm_after_init_commands+=('bindkey -M viins '^R' fzf-history-widget')
-
       # remap caps to escape
       setxkbmap -option caps:escape
 
