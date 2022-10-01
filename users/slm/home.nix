@@ -26,7 +26,6 @@
     enable = true;
     enableCompletion = true;
     enableSyntaxHighlighting= true;
-    defaultKeymap = "viins";
     dotDir = ".config/zsh";
 
     localVariables = {
@@ -48,7 +47,7 @@
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
         { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
-        { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
+        # macht prompt kaputt /slm { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
       ];
     };
 
@@ -61,7 +60,7 @@
       source ${config.xdg.configHome}/zsh/slm-zshrc
 
       # source powerlevel prompt
-      [ -f ${config.xdg.configHome}/powerlevel10k/.p10k.zsh]        && source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
+      [ -f ${config.xdg.configHome}/powerlevel10k/.p10k.zsh ]       && source ${config.xdg.configHome}/powerlevel10k/.p10k.zsh
 
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]            && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
