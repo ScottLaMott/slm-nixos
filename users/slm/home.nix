@@ -46,8 +46,8 @@
       enable = true;
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
-        { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
-        # macht prompt kaputt /slm { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration
+        # { name = "romkatv/powerlevel10k"; tags = [ as:theme depth:1 ]; }
+        # { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration / macht prompt kaputt /slm / IMPORTANT
       ];
     };
 
