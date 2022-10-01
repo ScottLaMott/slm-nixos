@@ -8,7 +8,7 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
   > sudo nixos-rebuild switch
   ```
 - _/etc/nixos/configuration.nix_<br>
-  Datei mit systemweiten Einstellungen.
+  Konfigurationsdatei für systemweiten Einstellungen.
   ```
   # Dokumentation aller Optionen
   > man configuration.nix
@@ -19,12 +19,17 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
   > home-manger switch
   ```
 - $HOME/ws/slm-nixos/users/slm/home.nix<br>
-  Dateien mit Benutzereinstellnugen. Anzeigen aller Optionen mit
+  Dateien mit Benutzereinstellungen. Anzeigen aller Optionen mit
   ```
   # Dokumentation aller Optionen
   > man home-configuration.nix
   ```
 <br>
+
+## gute Webseiten
+
+- [The Valuable Dev / zsh-install-configure-mouseless](https://thevaluable.dev/zsh-install-configure-mouseless)
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 
 ## Protokoll, unvollständig
 
@@ -70,3 +75,4 @@ zle -N zle-history-line-set
 ## Fragen und Antworten
 Q: Sind .nix Dateien Konfigurationsdateien ?<br>
 A: ja, irgendwie schon, sie sind aber auch Quellcode.<br>
+
