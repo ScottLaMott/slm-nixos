@@ -21,6 +21,7 @@ badd +1 users/slm/alacritty/alacritty.yml
 badd +1 users/slm/ranger/rc.conf
 badd +1 configs/vim/maps.vim
 badd +1 configs/vim/settings.vim
+badd +19 configs/zsh/slm-zshrc
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -32,6 +33,7 @@ $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
 edit users/slm/home.nix
 argglobal
+balt configs/zsh/slm-zshrc
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -42,11 +44,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 6 - ((5 * winheight(0) + 23) / 47)
+let s:l = 1 - ((0 * winheight(0) + 22) / 45)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 6
+keepjumps 1
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
