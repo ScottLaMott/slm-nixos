@@ -6,6 +6,8 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias v='vim'
 
+# verschdene
+alias c='clear'
 alias pgo='ping -c1 -W5 www.google.com'
 alias p='ping -c 3 -w5'
 
