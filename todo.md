@@ -3,6 +3,7 @@
 ## spotify account aendern oder repo privatisieren
 
 ### todo very first
+- ranger fehler, scope.sh nicht gefunden
 - git integragtion mit links
   - ist in arbeit
   - git-crypt für passwörter und secrets, siehe oben

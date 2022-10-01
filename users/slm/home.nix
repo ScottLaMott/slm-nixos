@@ -28,10 +28,6 @@
     enableSyntaxHighlighting= true;
     dotDir = ".config/zsh";
 
-    localVariables = {
-      POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD="true";
-    };
-
     # aliase, ausgelagert, see slm-aliases
     shellAliases = { };
 
