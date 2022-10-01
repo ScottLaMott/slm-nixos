@@ -1,13 +1,37 @@
-slm-nixos
+# SLM-NIXOS
 ---
-Repository für mein NIXOS-System.
-- /etc/nixos/configuration.nix
-- Benutzerkonfiguration mit Home-Manager
+Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 
-## protokoll, unvollständig
-  - fonts in awesome config eingestellt, Hack schaut gut aus
-  - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller.
-    - https://nixos.wiki/wiki/Home-Manager ## md link machen
+- NixOS-System bauen<br>
+  ```
+  # Build system
+  > sudo nixos-rebuild switch
+  ```
+- _/etc/nixos/configuration.nix_<br>
+  Datei mit systemweiten Einstellungen.
+  ```
+  # Dokumentation aller Optionen
+  > man configuration.nix
+  ```
+- Benutzer konfigurieren<br>
+  ```
+  # Build user
+  > home-manger switch
+  ```
+- $HOME/ws/slm-nixos/users/slm/home.nix<br>
+  Dateien mit Benutzereinstellnugen. Anzeigen aller Optionen mit
+  ```
+  # Dokumentation aller Optionen
+  > man home-configuration.nix
+  ```
+<br>
+
+## Protokoll, unvollständig
+  - Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
+>
+- zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller<br>
+
+  - https://nixos.wiki/wiki/Home-Manager ## md link machen
 
   - symlinks für /etc/nixos/configuration.nix und ~/.config/nixpkgs/home.nix erstellt
   - Home-Manager systemweit installiert
