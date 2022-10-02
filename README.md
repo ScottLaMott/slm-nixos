@@ -25,7 +25,6 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
   > man home-configuration.nix
   ```
 <br>
-
 ## gute Webseiten
 
 - [The Valuable Dev / zsh-install-configure-mouseless](https://thevaluable.dev/zsh-install-configure-mouseless)
@@ -43,6 +42,8 @@ zle-history-line-set () {
 }
 zle -N zle-history-line-set
 ```
+## git branch
+- git-branch bugfix-ranger erstellt, um Rangerfehler einzugrenzen
 
 - Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
 >
