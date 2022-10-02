@@ -16,9 +16,18 @@
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
 
+- Fehler
+  ```
+  ~/ws/enterprise master*
+  ❮ ranger
+  Preview script `/nix/store/gdymqfbnmrjc9c60flnxlf622bmdygdg-ranger-1.9.3/share/doc/ranger/config/scope.sh` doesn't exist!
+
+  ~/ws/enterprise master*
+  ❯
+  ```
+
 ### todo
-- fehler aufruf vim -S session.vim, fehlermeldung auswerten
-  - lösung: nixos.vim war in .gitignore. folge fd ignoriert dateien in .gitignore
+- tig/vim integration
 - passsword manager
 - slm-art in github einchecken
 - nixos auf bare-metal
@@ -34,6 +43,8 @@
     - git, python bytecode nicht einchecken
 
 ### done
+- fehler aufruf vim -S session.vim, fehlermeldung auswerten
+  - lösung: nixos.vim war in .gitignore. folge fd ignoriert dateien in .gitignore
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
   - markdown-preview-nvim
   - nord-vim
