@@ -1,11 +1,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " slm@schoco-company.com
 "
-" nvim mapping
-"
-" slm@schoco-company.com
+" vim mappings
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""
+
 let mapleader=" "
 
 " ??? map <leader>s :source $HOME/.config/nvim/init.vim<cr>

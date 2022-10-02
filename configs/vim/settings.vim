@@ -1,4 +1,9 @@
-" my on setting
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+" slm@schoco-company.com
+"
+" vim settings
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd BufWritePre * %s/\s\+$//e    " remove trailing whitespace on write
 
