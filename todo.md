@@ -27,6 +27,7 @@
   ```
 
 ### todo
+- vim mit grünen colorscheme
 - tig/vim integration
 - passsword manager
 - slm-art in github einchecken
