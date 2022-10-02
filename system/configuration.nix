@@ -93,7 +93,7 @@
    pulsemixer pure-prompt python
    ranger ripgrep
    screen speedtest-cli stow
-   tmux tree tldr
+   tig tmux tree tldr
    wget
   ];
 
