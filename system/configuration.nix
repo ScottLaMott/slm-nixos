@@ -1,3 +1,10 @@
+#---------------------------------------------------
+# slm@schoco-company.com
+#
+# configuration.nix / System Configuration in /etc/nixos/configuration.nix
+#
+#---------------------------------------------------
+
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
@@ -93,7 +100,7 @@
    pulsemixer pure-prompt python
    ranger ripgrep
    screen speedtest-cli stow
-   tig tmux tree tldr
+   tig tmux toilet tree tldr
    wget
   ];
 

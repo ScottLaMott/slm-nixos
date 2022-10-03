@@ -1,3 +1,10 @@
+#---------------------------------------------------
+# slm@schoco-company.com
+#
+# home.nix / User Configuration
+#
+#---------------------------------------------------
+
 { config, pkgs, ... }:
 
 {
@@ -69,7 +76,7 @@
     enable = true;
     plugins = with pkgs.vimPlugins; [
       # colorscheme
-      dracula-vim gruvbox jellybeans-vim nord-vim vim-monokai
+      awesome-vim-colorschemes dracula-vim gruvbox jellybeans-vim nord-vim vim-monokai
       # airline
       vim-airline vim-airline-themes
       # the best of the rest
