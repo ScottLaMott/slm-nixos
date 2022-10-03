@@ -56,8 +56,8 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "/home/slm/.config/awesome/theme.lua")
 -- beautiful.font = "DejaVu Sans Mono 9"
-beautiful.font = "Hack 10"
-beautiful.useless_gap = 2
+beautiful.font = "Hack 8"
+beautiful.useless_gap = 3
 
 -- beautiful.border_normal  = "white"
 -- beautiful.border_focus   = "green"
