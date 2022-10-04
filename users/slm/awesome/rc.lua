@@ -56,8 +56,8 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "/home/slm/.config/awesome/theme.lua")
 -- beautiful.font = "DejaVu Sans Mono 9"
-beautiful.font = "Hack 10"
-beautiful.useless_gap = 2
+beautiful.font = "Hack 8"
+beautiful.useless_gap = 3
 
 -- beautiful.border_normal  = "white"
 -- beautiful.border_focus   = "green"
@@ -188,7 +188,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1-system", "2-workspace", "3-terminal", "4-enterprise", "5-", "6-", "7-spotify", "8-control", "9-brave" }, s, awful.layout.layouts[1])
+    awful.tag({ "1-system", "2-enterprise", "3-qemu/host", "4-terminal", "5-", "6-", "7-spotify", "8-control", "9-brave" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()

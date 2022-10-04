@@ -3,11 +3,11 @@
 ## spotify account aendern oder repo privatisieren
 
 ### todo very first
-- ranger fehler, scope.sh nicht gefunden
-- git integragtion mit links
-  - ist in arbeit
-  - git-crypt für passwörter und secrets, siehe oben
+- Git-Integragtion mit symlinks
+  - ist in Arbeit
+  - git-crypt für Passwörter und Secrets, siehe oben
   - fernziel stow ???
+- Ranger - Vorschau Bilddateien
 
 ### todo first
 
@@ -16,17 +16,8 @@
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
 
-- Fehler
-  ```
-  ~/ws/enterprise master*
-  ❮ ranger
-  Preview script `/nix/store/gdymqfbnmrjc9c60flnxlf622bmdygdg-ranger-1.9.3/share/doc/ranger/config/scope.sh` doesn't exist!
-
-  ~/ws/enterprise master*
-  ❯
-  ```
-
 ### todo
+- vim mit grünen colorscheme
 - tig/vim integration
 - passsword manager
 - slm-art in github einchecken
@@ -43,7 +34,7 @@
     - git, python bytecode nicht einchecken
 
 ### done
-- fehler aufruf vim -S session.vim, fehlermeldung auswerten
+- Fehler: aufruf vim -S session.vim, fehlermeldung auswerten
   - lösung: nixos.vim war in .gitignore. folge fd ignoriert dateien in .gitignore
 - vim-plugins ans laufen gebracht, eintrag in ~/.config/nixpkgs/home.nix
   - markdown-preview-nvim
@@ -73,6 +64,17 @@
 
 - farbige man-pages
   durch terminal colors gelöst, nein slm-plugin wird gebraucht
+
+- Fehler:
+  ```
+  ~/ws/enterprise master*
+  ❮ ranger
+  Preview script `/nix/store/gdymqfbnmrjc9c60flnxlf622bmdygdg-ranger-1.9.3/share/doc/ranger/config/scope.sh` doesn't exist!
+
+  ~/ws/enterprise master*
+  ❯
+  ```
+  -- Lösung: scope.sh in .config/ranger gelöscht, ranger-pkgs gelöscht, ranger-pkgs neuinstalliert
 
 #### to-read
 - nix manual
