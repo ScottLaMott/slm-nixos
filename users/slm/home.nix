@@ -46,6 +46,7 @@
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
         # { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration / macht prompt kaputt /slm / IMPORTANT
+        { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
       ];
     };
     initExtra = ''
