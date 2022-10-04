@@ -42,6 +42,17 @@ zle-history-line-set () {
 }
 zle -N zle-history-line-set
 ```
+- zsh-plugins werden mit dem home-manager verwaltet in **users/slm/home.nix**
+```
+zplug = {
+  enable = true;
+  zplugHome = "${config.xdg.dataHome}/zsh/zplug";
+  plugins = [
+    { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
+  ];
+};
+```
+
 ## git branch
 - git-branch bugfix-ranger erstellt, um Rangerfehler einzugrenzen
 
