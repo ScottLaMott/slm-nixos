@@ -1,6 +1,7 @@
 #!/bin/sh
 # my alias definitions
-
+alias pf='prompt fade white black blue'
+█
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
