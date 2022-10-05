@@ -1,7 +1,6 @@
 #!/bin/sh
 # my alias definitions
-alias pf='prompt fade white black blue'
-█
+
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
@@ -17,11 +16,12 @@ alias ls='lsd'
 alias la='ls -la'
 alias ll='ls -l'
 alias lR='ls -lR'
-alias dfe='df -t ext4'                    # fs-type ext4
+alias dfe='df -t ext4'    # fs-type ext4
 
 # prompt
-alias pp='prompt pure'                    # fs-type ext4
-alias pa='prompt adam2'                   # fs-type ext4
+alias pa='prompt adam2'
+alias pf='prompt fade white black blue'
+alias pp='prompt pure'
 
 # history
 alias hg='history | grep '
