@@ -20,9 +20,9 @@
   # config by slm
   #
   home.packages = with pkgs; [
-    btop cmatrix cheat feh figlet gdu gnupg ipcalc kitty lsd
-    minicom neovim powerline-fonts sxiv spotifyd spotify-tui
-    w3m xorg.xeyes zathura
+    btop cmatrix cheat feh figlet gdu gnupg ipcalc kitty
+    lsd minicom neovim neomutt powerline-fonts
+    sxiv spotifyd spotify-tui w3m xorg.xeyes zathura
   ];
 
   #--------------------------------------------------------------------------------
