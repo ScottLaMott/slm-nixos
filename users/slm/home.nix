@@ -33,8 +33,8 @@
     enable = true;
     defaultKeymap = "viins";
     enableCompletion = true;
-    enableSyntaxHighlighting = true;
     enableAutosuggestions = true;
+    enableSyntaxHighlighting = true;
     # enableAutopairs = true;
     dotDir = ".config/zsh";
     shellAliases = { };              # aliase, ausgelagert, see slm-aliases
