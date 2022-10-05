@@ -25,6 +25,7 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
   > man home-configuration.nix
   ```
 <br>
+
 ## gute Webseiten
 
 - [The Valuable Dev / zsh-install-configure-mouseless](https://thevaluable.dev/zsh-install-configure-mouseless)
@@ -42,14 +43,26 @@ zle-history-line-set () {
 }
 zle -N zle-history-line-set
 ```
-- zsh-plugins werden mit dem home-manager verwaltet in **users/slm/home.nix**
+- zsh-plugins werden mit dem home-manager verwaltet in **./users/slm/home.nix**
 ```
-zplug = {
+programs.zsh = {
   enable = true;
-  zplugHome = "${config.xdg.dataHome}/zsh/zplug";
-  plugins = [
-    { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
-  ];
+  defaultKeymap = "viins";
+  enableCompletion = true;
+  enableSyntaxHighlighting = true;
+  enableAutosuggestions = true;
+};
+```
+und
+```
+programs.zsh = {
+  zplug = {
+    enable = true;
+    zplugHome = "${config.xdg.dataHome}/zsh/zplug";
+    plugins = [
+      { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
+    ];
+  };
 };
 ```
 
