@@ -1,4 +1,4 @@
-# SLM-NIXOS
+# SLM-NIXOS (dev-branch)
 ---
 Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 
