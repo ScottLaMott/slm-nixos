@@ -30,6 +30,7 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 
 - [The Valuable Dev / zsh-install-configure-mouseless](https://thevaluable.dev/zsh-install-configure-mouseless)
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+- [Markdown Guide - deutsch](https://markdown.de)
 - [ArchWiki - mutt/neomutt](https://wiki.archlinux.org/title/mutt)
 ## Protokoll, unvollständig
 
