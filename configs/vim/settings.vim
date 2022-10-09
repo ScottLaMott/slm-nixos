@@ -38,5 +38,8 @@ let netrw_sizestyle="H"
 "--- fugitive
 set diffopt+=vertical
 
+" set colors --> gruvbox nord jellybeans monokai
+colorscheme PaperColor
+
 " set vim-airline --> bubblegum violet alduin molokai
 let g:airline_theme="dark_minimal"

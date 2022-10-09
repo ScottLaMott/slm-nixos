@@ -105,8 +105,6 @@
       " source slm mappings
       source ${config.xdg.configHome}/vim/maps.vim
 
-      " set colors --> gruvbox nord jellybeans
-      colorscheme monokai
       """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     '';
   };
