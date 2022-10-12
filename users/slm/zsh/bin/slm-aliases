@@ -6,48 +6,48 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias v='vim'
 
-# verschdene
+# --- verschiedene
 alias c='clear'
 alias pgo='ping -c1 -W5 www.google.com'
 alias p='ping -c 3 -w5'
 
-# ls + df
+# --- ls / df
 alias ls='lsd'
 alias la='ls -la'
 alias ll='ls -l'
 alias lR='ls -lR'
 alias dfe='df -t ext4'    # fs-type ext4
 
-# prompt
+# --- prompt
 alias pa='prompt adam2'
 alias pf='prompt fade white black blue'
 alias pp='prompt pure'
 
-# history
+# --- history
 alias hg='history | grep '
 
-# tumx + tmuxinator
+# --- tumx / tmuxinator
 alias tml='tmux list-session'
 alias mux='tmuxinator'
 # ?? alias tmh='tmux set-window-option main-pane-height 25 ; tmux select-layout main-horizontal'
 
-# git
+# --- git
 alias gs='git status'
 
-# ansible
+# --- ansible
 alias ansp='ansible -m ping'
 
-# eyecandy hi hi
+# --- eyecandy hi hi
 alias cm='cmatrix -r'
 alias nf='neofetch'
 
-# t
+# --- t
 alias t='python2 ~/ws/git/t/t.py --task-dir ~/tasks --list tasks'
 alias tl='python2 ~/ws/git/t/t.py --task-dir ~/tasks --list tasks-lisa'
 alias tg='python2 ~/ws/git/t/t.py --task-dir ~/tasks --list tasks-godwin'
 
-# silversearcher-ag
+# --- silversearcher-ag
 alias fd='fd --hidden'
 
-# git, falsch neu ergooglen
+# --- git, falsch neu ergooglen
 #alias gitlog='log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit h
