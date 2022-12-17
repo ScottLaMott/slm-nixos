@@ -21,6 +21,7 @@ alias dfe='df -t ext4'    # fs-type ext4
 # --- prompt
 alias pa='prompt adam2'
 alias pf='prompt fade white black blue'
+alias po='prompt oliver'
 alias pp='prompt pure'
 
 # --- history
@@ -40,6 +41,7 @@ alias ansp='ansible -m ping'
 # --- eyecandy hi hi
 alias cm='cmatrix -r'
 alias nf='neofetch'
+alias cc='/usr/bin/theme.sh -i2'
 
 # --- t
 alias t='python2 ~/ws/git/t/t.py --task-dir ~/tasks --list tasks'
