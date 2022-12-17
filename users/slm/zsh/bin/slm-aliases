@@ -40,7 +40,7 @@ alias ansp='ansible -m ping'
 
 # --- eyecandy hi hi
 alias cm='cmatrix -r'
-alias nf='neofetch'
+alias nf='clear; neofetch'
 alias cc='/usr/bin/theme.sh -i2'
 
 # --- t
