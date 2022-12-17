@@ -47,7 +47,6 @@ ln -s $HOME/ws/slm-nixos/configs/vim/maps.vim maps.vim
 popd
 
 # --- zsh configuration
-ushd $HOME/.config/zsh
 pushd $HOME/.config/zsh
 ln -s $HOME/ws/slm-nixos/configs/zsh/slm-zshrc slm-zshrc
 popd
