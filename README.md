@@ -69,6 +69,7 @@ programs.zsh = {
 
 ## git branch
 - git-branch bugfix-ranger erstellt, um Rangerfehler einzugrenzen
+- git-branch feat-neomutt erstellt, für test neomutt
 
 - Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
 >
