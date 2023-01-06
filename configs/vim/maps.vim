@@ -34,6 +34,12 @@ map <leader>f  :FZF! -e<cr>
 "--- markdown-preview
 map <leader>mp :MarkdownPreview<cr>
 
+"--- goyo
+map <leader>g  :Goyo<cr>
+
+"--- limelight
+map <leader>ll :Limelight!!<cr>
+
 "--- terminal
 " für :terminal-mode, exit terminal-mode
 tnoremap <Esc><Esc> <C-\><C-n>

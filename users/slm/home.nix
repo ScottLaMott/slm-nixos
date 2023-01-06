@@ -84,8 +84,8 @@
       # airline
       vim-airline vim-airline-themes
       # the best of the rest
-      fzf-vim  markdown-preview-nvim  vim-nix
-      vim-startify  vim-vinegar  vim-fugitive
+      fzf-vim goyo markdown-preview-nvim limelight-vim vim-nix
+      vim-startify  vim-snippets vim-vinegar  vim-fugitive ultisnips
     ];
     # settings managed by home manager
     settings = {
