@@ -29,7 +29,7 @@ map <F3>        <C-]>
 
 "--- fzf
 map <leader>ff :FZF!<cr>
-map <leader>f  :FZF! -e<cr>
+map <leader>f  :FZF<cr>
 
 "--- markdown-preview
 map <leader>mp :MarkdownPreview<cr>

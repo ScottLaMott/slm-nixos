@@ -38,6 +38,9 @@ let netrw_sizestyle="H"
 "--- fugitive
 set diffopt+=vertical
 
+"--- fzf
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+
 "--- goyo
 let g:goyo_width="85%"
 let g:goyo_height="95%"
@@ -52,3 +55,4 @@ colorscheme PaperColor
 
 " set vim-airline --> bubblegum violet alduin molokai
 let g:airline_theme="dark_minimal"
+
