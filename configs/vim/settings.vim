@@ -18,6 +18,8 @@ set nobackup
 set nowritebackup
 set path+=**			                    " für z. B. find-ex-command
 set clipboard+=unnamedplus            " use system clipboard
+set ignorecase                        " while searching
+set hlsearch                          " highlight match
 
 set background=dark
 set scrolloff=100
@@ -39,7 +41,7 @@ let netrw_sizestyle="H"
 set diffopt+=vertical
 
 "--- fzf
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
 "--- goyo
 let g:goyo_width="85%"
