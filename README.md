@@ -32,7 +32,8 @@ Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [Markdown Guide - deutsch](https://markdown.de)
 - [ArchWiki - mutt/neomutt](https://wiki.archlinux.org/title/mutt)
-## Protokoll, unvollständig
+
+## Protokoll, unvollständig ##
 
 - wichtig für fzf/zsh-history, muss in zshrc sein
 ```
@@ -98,6 +99,8 @@ programs.zsh = {
 
   - powerlevel10k plugin installiert (prompt)
     - in das $HOME/.zplug/repos verzeichnis
+
+  - Goyo, limelight, UltiSnips und vim-snippets mit Home-Manager installiert, einige Settings und mappings in vim-Konfiguration gemacht
 
 ## Fragen und Antworten
 Q: Sind .nix Dateien Konfigurationsdateien ?<br>

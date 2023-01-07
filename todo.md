@@ -76,6 +76,8 @@
   ```
   -- Lösung: scope.sh in .config/ranger gelöscht, ranger-pkgs gelöscht, ranger-pkgs neuinstalliert
 
+- Goyo und Limeline installiert (vim-plugin)
+
 #### to-read
 - nix manual
 - home-manager manual
