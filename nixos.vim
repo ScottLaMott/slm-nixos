@@ -14,7 +14,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +2 users/slm/home.nix
+badd +1 users/slm/home.nix
 badd +49 system/configuration.nix
 badd +1 users/slm/awesome/rc.lua
 badd +1 users/slm/alacritty/alacritty.yml
@@ -24,7 +24,7 @@ badd +4 configs/vim/settings.vim
 badd +10 configs/zsh/slm-zshrc
 badd +19 todo.md
 badd +1 README.md
-badd +0 users/slm/zsh/bin/slm-aliases
+badd +49 users/slm/zsh/bin/slm-aliases
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -34,10 +34,9 @@ $argadd users/slm/alacritty/alacritty.yml
 $argadd users/slm/ranger/rc.conf
 $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
-edit users/slm/zsh/bin/slm-aliases
+edit users/slm/home.nix
 argglobal
-if bufexists(fnamemodify("users/slm/zsh/bin/slm-aliases", ":p")) | buffer users/slm/zsh/bin/slm-aliases | else | edit users/slm/zsh/bin/slm-aliases | endif
-balt configs/zsh/slm-zshrc
+balt users/slm/zsh/bin/slm-aliases
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -48,12 +47,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 10 - ((9 * winheight(0) + 24) / 48)
+let s:l = 8 - ((7 * winheight(0) + 29) / 59)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 10
-normal! 012|
+keepjumps 8
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
