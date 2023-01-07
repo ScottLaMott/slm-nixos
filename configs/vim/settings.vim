@@ -39,8 +39,8 @@ let netrw_sizestyle="H"
 set diffopt+=vertical
 
 "--- goyo
-let g:goyo_width="80%"
-let g:goyo_height="80%"
+let g:goyo_width="85%"
+let g:goyo_height="95%"
 
 "--- ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
