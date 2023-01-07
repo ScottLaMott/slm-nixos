@@ -118,7 +118,7 @@
     defaultOptions = [
       "--layout=reverse"
       "--info=inline"
-      "--prompt='slm-fzf->'"
+      "--prompt='slm-fzf-x> '"
       ];
   };
 
