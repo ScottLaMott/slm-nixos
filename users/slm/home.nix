@@ -115,10 +115,12 @@
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
+    defaultCommand = "fd --type f --hidden";
     defaultOptions = [
       "--layout=reverse"
+      "--cycle"
       "--info=inline"
-      "--prompt='slm-fzf-x> '"
+      "--prompt='fzf-from-home-manager-option> '"
       ];
   };
 
