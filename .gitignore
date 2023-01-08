@@ -1,7 +1,7 @@
 result
-supercooles-zsh-script.zsh
-supercooles-zsh-script.figlet.zsh
+.git
 _zvm-config-slm.zsh
 system/hardware-configuration.nix
 tmp
 .cache
+__pycache__
