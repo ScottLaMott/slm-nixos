@@ -117,10 +117,14 @@
     enableZshIntegration = true;
     defaultCommand = "fd --type f --hidden";
     defaultOptions = [
+      "--header=HEADER"
       "--layout=reverse"
+      "--height=80%"
       "--cycle"
+      "--border"
       "--info=inline"
-      "--prompt='fzf-from-home-manager-option> '"
+      "--prompt='slm-fzf-> '"
+      # "--preview=bat"
       ];
   };
 
