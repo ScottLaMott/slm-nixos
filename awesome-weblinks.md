@@ -13,12 +13,18 @@ Eine Sammlung guter Internetseiten
 ###### libvirt ######
 - [libvirt - Homepage](https://libvirt.org)
 - [libvirt - Wiki](https://wiki.libvirt.org/page/Main_Page)
+- [libvirt - VM lifecycle](https://wiki.libvirt.org/page/VM_lifecycle)
+
 ###### qemu ######
 - [qemu - Homepage](https://www.qemu.org)
 - [qemu - Wiki](https://wiki.qemu.org/Main_Page)
 - [qemu - Documentation](https://www.qemu.org/docs/master)
+
 ###### kvm ######
 - [kvm](https://www.linux-kvm.org/page/Main_Page)
+
+###### fzf ######
+- [fzf - Why should i use it ...](https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff)
 
 ### Blogger ###
 ###### The Valuable Dev ######
@@ -27,4 +33,7 @@ Eine Sammlung guter Internetseiten
 ###### The Rest ######
 - [Xe](https://xeiaso.net/blog)
 
-- [libvirt - VM lifecycle](https://wiki.libvirt.org/page/VM_lifecycle)
+
+
+
+
