@@ -99,7 +99,7 @@
    nmap neofetch
    pulsemixer pure-prompt python
    ranger ripgrep
-   screen speedtest-cli stow
+   screen speedtest-cli silver-searcher stow
    tig tmux toilet tree tldr
    wget
   ];
