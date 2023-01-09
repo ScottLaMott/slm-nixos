@@ -28,8 +28,15 @@ map <F2>        <C-T>
 map <F3>        <C-]>
 
 "--- fzf
-map <leader>ff :FZF!<cr>
-map <leader>f  :FZF<cr>
+map <leader>fa :Ag<cr>
+map <leader>fc :Colors<cr>
+map <leader>ff :Files<cr>
+map <leader>fb :Buffers<cr>
+map <leader>fd :Buffers<cr>
+map <leader>fh :Helptags<cr>
+map <leader>fm :Maps<cr>
+map <leader>fr :Rg<cr>
+map <leader>fs :Snippets<cr>
 
 "--- markdown-preview
 map <leader>mp :MarkdownPreview<cr>

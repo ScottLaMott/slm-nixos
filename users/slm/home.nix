@@ -117,16 +117,16 @@
     enableZshIntegration = true;
     defaultCommand = "fd --type f --hidden";
     defaultOptions = [
-      "--header=SLM-FZF"
-      "--header-first"
+      #"--header=SLM-FZF"
+      #"--header-first"
       "--layout=reverse"
       "--height=80%"
       "--cycle"
-      "--border=rounded"
+      "--border=sharp"
       "--info=inline"
-      "--prompt='slm-fzf-> '"
+      "--prompt='fzf-> '"
       "--scroll-off=5"
-      # "--preview=bat"
+      "--preview=bat"
       ];
   };
 
