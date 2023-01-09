@@ -102,6 +102,8 @@ programs.zsh = {
 
   - Goyo, limelight, UltiSnips und vim-snippets mit Home-Manager installiert, einige Settings und mappings in vim-Konfiguration gemacht
 
+  - Jan 09, 2023: vim mappings für fzf gemacht
+
 ## Fragen und Antworten
 Q: Sind .nix Dateien Konfigurationsdateien ?<br>
 A: ja, irgendwie schon, sie sind aber auch Quellcode.<br>
