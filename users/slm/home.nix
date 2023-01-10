@@ -128,6 +128,7 @@
       "--scroll-off=5"
       "--preview=bat"
       ];
+    changeDirWidgetCommand = "fd --type d --hidden";
   };
 
   #--------------------------------------------------------------------------------
