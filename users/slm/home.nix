@@ -126,7 +126,7 @@
       "--info=inline"
       "--prompt='fzf-> '"
       "--scroll-off=5"
-      "--preview=bat"
+#      "--preview=bat"
       ];
     changeDirWidgetCommand = "fd --type d --hidden";
   };
