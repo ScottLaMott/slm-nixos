@@ -57,11 +57,20 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "/home/slm/.config/awesome/theme.lua")
 -- beautiful.font = "DejaVu Sans Mono 9"
 beautiful.font = "Hack 10"
-beautiful.useless_gap = 1
+beautiful.useless_gap = 0
 
 -- beautiful.border_normal  = "white"
 -- beautiful.border_focus   = "green"
 -- beautiful.border_marked  = "blue"
+
+beautiful.border_normal  = "#000000"
+
+-- beautiful.border_focus   = "#ffffff"  -- white
+-- beautiful.border_focus   = "#00c9a7"  -- mint green
+-- beautiful.border_focus   = "#936c00"  -- gold
+beautiful.border_focus   = "#9cbfa7"  -- cambridge blue
+-- beautiful.border_focus   = "#a8eb12"  -- neon green
+
 
 -- change to $HOME ???
 beautiful.wallpaper = "/home/slm/.local/share/wallpapers/bg-images/current-wallpaper"
