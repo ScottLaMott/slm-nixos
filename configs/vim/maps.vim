@@ -10,7 +10,6 @@ let mapleader=" "
 
 "--- general
 map <leader>q  :quit<cr>
-map <leader>sf :sfind
 map <leader>s  :Startify<cr>
 " ??? map <leader>s :source $HOME/.config/nvim/init.vim<cr>
 
@@ -38,6 +37,17 @@ map <leader>fh      :Helptags<cr>
 map <leader>fm      :Maps<cr>
 map <leader>fr      :Rg<cr>
 map <leader>fs      :Snippets<cr>
+
+" --- ERROR ---------------------------------
+"     Error detected while processing /home/slm/ws/slm-nixos/configs/vim/maps.vim:
+"     line   xx:
+"     E484: Can't open file configs/vim/mapscr>'
+"
+"map <leader>sf      :w | source %<cr>     !!! schmeißt fehler
+"map <leader>sf      ':w | source %<cr>'
+"map <leader>sf      ':w | :source %<cr>'
+"map <leader>sf      ':w | source xfile<cr>'
+" --- ERROR ---------------------------------
 
 "--- markdown-preview
 map <leader>mp :MarkdownPreview<cr>
