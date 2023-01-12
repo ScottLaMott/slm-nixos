@@ -89,18 +89,33 @@
   # search wget
   environment.systemPackages = with pkgs; [
    alacritty
-   bat brave
+   bat
+   brave
    curl
    dmenu
-   fd file firefox fzf
+   fd
+   file
+   firefox
+   fzf
    git
    htop
    killall
-   nmap neofetch
-   pulsemixer pure-prompt python
-   ranger ripgrep
-   screen speedtest-cli silver-searcher stow
-   tig tmux toilet tree tldr
+   nmap
+   neofetch
+   pulsemixer
+   pure-prompt
+   python
+   ranger
+   ripgrep
+   screen
+   speedtest-cli
+   silver-searcher
+   stow
+   tig
+   tmux
+   toilet
+   tree
+   tldr
    wget
   ];
 
