@@ -79,17 +79,17 @@
   programs.vim = {
     enable = true;
     plugins = with pkgs.vimPlugins; [
-      # colorscheme
+      # -- colorscheme
       awesome-vim-colorschemes
       dracula-vim
       gruvbox
       jellybeans-vim
       nord-vim
       vim-monokai
-      # airline
+      # -- airline
       vim-airline
       vim-airline-themes
-      # the best of the rest
+      # -- the best of the rest
       fzf-vim
       goyo
       markdown-preview-nvim
@@ -101,7 +101,7 @@
       vim-fugitive
       ultisnips
     ];
-    # settings managed by home manager
+    # -- settings managed by home manager
     settings = {
       number = true;
       relativenumber  = true;
