@@ -80,12 +80,26 @@
     enable = true;
     plugins = with pkgs.vimPlugins; [
       # colorscheme
-      awesome-vim-colorschemes dracula-vim gruvbox jellybeans-vim nord-vim vim-monokai
+      awesome-vim-colorschemes
+      dracula-vim
+      gruvbox
+      jellybeans-vim
+      nord-vim
+      vim-monokai
       # airline
-      vim-airline vim-airline-themes
+      vim-airline
+      vim-airline-themes
       # the best of the rest
-      fzf-vim goyo markdown-preview-nvim limelight-vim vim-nix
-      vim-startify  vim-snippets vim-vinegar  vim-fugitive ultisnips
+      fzf-vim
+      goyo
+      markdown-preview-nvim
+      limelight-vim
+      vim-nix
+      vim-startify
+      vim-snippets
+      vim-vinegar
+      vim-fugitive
+      ultisnips
     ];
     # settings managed by home manager
     settings = {
@@ -117,7 +131,6 @@
     enableZshIntegration = true;
     defaultCommand = "fd --type f --hidden";
     defaultOptions = [
-      #"--header=SLM-FZF"
       #"--header-first"
       "--layout=reverse"
       "--height=80%"
