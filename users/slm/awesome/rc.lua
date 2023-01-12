@@ -64,11 +64,12 @@ beautiful.useless_gap = 0
 -- beautiful.border_marked  = "blue"
 
 beautiful.border_normal  = "#000000"
+beautiful.border_focus   = "#a8eb12"  -- neon green
 
 -- beautiful.border_focus   = "#ffffff"  -- white
 -- beautiful.border_focus   = "#00c9a7"  -- mint green
 -- beautiful.border_focus   = "#936c00"  -- gold
-beautiful.border_focus   = "#9cbfa7"  -- cambridge blue
+-- beautiful.border_focus   = "#9cbfa7"  -- cambridge blue
 -- beautiful.border_focus   = "#a8eb12"  -- neon green
 
 
@@ -90,17 +91,20 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.tile,
+    awful.layout.suit.magnifier,
+    awful.layout.suit.max,
     awful.layout.suit.floating,
+    -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.bottom,
     -- awful.layout.suit.tile.top,
     -- awful.layout.suit.fair,
     -- awful.layout.suit.fair.horizontal,
     -- awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.spiral.dwindle,
+    -- awful.layout.suit.magnifier,
     -- awful.layout.suit.max,
     -- awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
     -- awful.layout.suit.corner.nw,
     -- awful.layout.suit.corner.ne,
     -- awful.layout.suit.corner.sw,
