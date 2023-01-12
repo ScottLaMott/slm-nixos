@@ -30,7 +30,7 @@ map <F3>        <C-]>
 map <leader>fa      :Ag<cr>
 map <leader>fc      :Colors<cr>
 map <leader>ff      :Files<cr>
-map <leader><space> :Files<cr>
+map <leader><space> :Buffers<cr>
 map <leader>fb      :Buffers<cr>
 map <leader>fd      :Buffers<cr>
 map <leader>fh      :Helptags<cr>
@@ -39,6 +39,7 @@ map <leader>fr      :Rg<cr>
 map <leader>fs      :Snippets<cr>
 
 " --- ERROR ---------------------------------
+"echo "hello start error\n"
 "     Error detected while processing /home/slm/ws/slm-nixos/configs/vim/maps.vim:
 "     line   xx:
 "     E484: Can't open file configs/vim/mapscr>'
@@ -47,6 +48,11 @@ map <leader>fs      :Snippets<cr>
 "map <leader>sf      ':w | source %<cr>'
 "map <leader>sf      ':w | :source %<cr>'
 "map <leader>sf      ':w | source xfile<cr>'
+"map <leader>sf      :echo "xx"<cr>
+"map <leader>sf      :echo % | source %<cr>
+"map <leader>sf      :source %<cr>
+
+"echo "hello end error\n"
 " --- ERROR ---------------------------------
 
 "--- markdown-preview
