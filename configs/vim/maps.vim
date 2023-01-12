@@ -34,6 +34,7 @@ map <leader><space> :Buffers<cr>
 map <leader>fb      :Buffers<cr>
 map <leader>fd      :Buffers<cr>
 map <leader>fh      :Helptags<cr>
+map <leader>fl      :Lines<cr>
 map <leader>fm      :Maps<cr>
 map <leader>fr      :Rg<cr>
 map <leader>fs      :Snippets<cr>
