@@ -52,9 +52,13 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "xresources/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "sky/theme.lua")
 -- beautiful.init(gears.filesystem.get_themes_dir() .. "theme.lua")
--- beautiful.init(gears.filesystem.get_themes_dir() .. "/home/slm/.config/awesome/theme.lua")
+
 -- beautiful.font = "DejaVu Sans Mono 9"
 beautiful.font = "Hack 10"
 beautiful.useless_gap = 0
@@ -64,7 +68,7 @@ beautiful.useless_gap = 0
 -- beautiful.border_marked  = "blue"
 
 beautiful.border_normal  = "#000000"
-beautiful.border_focus   = "#a8eb12"  -- neon green
+beautiful.border_focus   = "#ffffff"  -- white
 
 -- beautiful.border_focus   = "#ffffff"  -- white
 -- beautiful.border_focus   = "#00c9a7"  -- mint green
@@ -201,7 +205,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1-system", "2-enterprise", "3-qemu/host", "4-terminal", "5-", "6-", "7-spotify", "8-control", "9-brave" }, s, awful.layout.layouts[1])
+    awful.tag({ "1-terminal", "2-nixos", "3-enterprise", "4-qemu/kvm", "5-", "6-", "7-spotify", "8-control", "9-brave" }, s, awful.layout.layouts[1])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -228,8 +232,7 @@ awful.screen.connect_for_each_screen(function(s)
     }
 
     -- Create the wibox
-    -- s.mywibox = awful.wibar({ position = "top", screen = s })
-    s.mywibox = awful.wibar({ position = "bottom", screen = s })
+    s.mywibox = awful.wibar({ position = "top", screen = s })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
