@@ -29,11 +29,13 @@
     gnupg
     ipcalc
     kitty
+    lf
     lsd
     minicom
     neovim
     neomutt
     powerline-fonts
+    rofi
     sxiv
     spotifyd
     spotify-tui
@@ -141,6 +143,22 @@
   };
 
   #--------------------------------------------------------------------------------
+  # nvim configuration
+  #
+
+  programs.neovim = {
+    # enable = true; FIXME
+  };
+
+  #--------------------------------------------------------------------------------
+  # rofi configuration
+  #
+  programs.rofi = {
+    enable = true;
+    terminal = "alacritty";
+  };
+
+  #--------------------------------------------------------------------------------
   # fzf configuration
   #
   programs.fzf = {
@@ -148,7 +166,7 @@
     enableZshIntegration = true;
     defaultCommand = "fd --type f --hidden";
     defaultOptions = [
-      #"--header-first"
+      "--header-first"
       "--layout=reverse"
       "--height=80%"
       "--cycle"
