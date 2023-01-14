@@ -68,6 +68,14 @@ programs.zsh = {
 };
 ```
 
+### killer-command ###
+
+```
+kill **<TAB>
+
+```
+
+
 ## git branch
 - git-branch bugfix-ranger erstellt, um Rangerfehler einzugrenzen
 - git-branch feat-neomutt erstellt, für test neomutt
