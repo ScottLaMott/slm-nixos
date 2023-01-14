@@ -79,6 +79,7 @@ kill **<TAB>
 ## git branch
 - git-branch bugfix-ranger erstellt, um Rangerfehler einzugrenzen
 - git-branch feat-neomutt erstellt, für test neomutt
+- git-branch feat-rofi erstellt, für integration rofi
 
 - Fonts für AwesomeWM in _awesome/rc.lua_ eingestellt. FontName _Hack_ schaut gut aus.
 >
