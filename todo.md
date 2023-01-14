@@ -10,19 +10,18 @@
 - Ranger - Vorschau Bilddateien
 
 ### todo first
-
 - zvm, zsh-vi-mode-plugin verbessern
   -  zsh-vi-mode-plugin verbessern
   - line-mode nach suchen - command versus insert, ich möchte immer command-mode
 - zplug (ZPLUG-Variabelen checken, .zplug, ...)
 
 ### todo
+- rofi konfigurieren
 - vim mit grünen colorscheme
 - tig/vim integration
 - passsword manager
 - slm-art in github einchecken
 - nixos auf bare-metal
-- rofi installieren
 - display acceleration
   - 'vainfo' fehler beseitigen
 - fonts installieren, fehlerhafte zeichen ins lsd, vim-airline, etc, ...
@@ -77,6 +76,8 @@
   -- Lösung: scope.sh in .config/ranger gelöscht, ranger-pkgs gelöscht, ranger-pkgs neuinstalliert
 
 - Goyo und Limeline installiert (vim-plugin)
+
+- rofi installiert
 
 #### to-read
 - nix manual
