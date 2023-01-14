@@ -25,6 +25,7 @@ badd +10 configs/zsh/slm-zshrc
 badd +19 todo.md
 badd +1 README.md
 badd +49 users/slm/zsh/bin/slm-aliases
+badd +2 users/slm/rofi/config.rasi
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -36,7 +37,7 @@ $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
 edit users/slm/home.nix
 argglobal
-balt users/slm/zsh/bin/slm-aliases
+balt users/slm/rofi/config.rasi
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -47,12 +48,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 8 - ((7 * winheight(0) + 29) / 59)
+let s:l = 154 - ((21 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 8
-normal! 0
+keepjumps 154
+normal! 05|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
@@ -65,7 +66,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
