@@ -12,4 +12,5 @@
 //@theme "/nix/store/3hhj57zw7dwzvpw6g8n23i4bn0nkzwkf-rofi-1.7.3/share/rofi/themes/gruvbox-dark-soft.rasi"
 //@theme "/nix/store/3hhj57zw7dwzvpw6g8n23i4bn0nkzwkf-rofi-1.7.3/share/rofi/themes/Arc-Dark.rasi"
 //@theme "/home/slm/.nix-profile/share/rofi/themes/gruvbox-dark-hard.rasi"
-@theme "/home/slm/.nix-profile/share/rofi/themes/Indego.rasi"
+//@theme "/home/slm/.nix-profile/share/rofi/themes/Indego.rasi"
+@theme "/nix/store/3hhj57zw7dwzvpw6g8n23i4bn0nkzwkf-rofi-1.7.3/share/rofi/themes/gruvbox-dark-hard.rasi"
