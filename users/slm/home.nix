@@ -155,7 +155,12 @@
 
   programs.rofi = {
     enable = true;
+    theme = "gruvbox-dark";
+    #theme = "purple";
     terminal = "alacritty";
+    location = "center";
+    xoffset = -320;
+    yoffset = -180;
   };
 
   #----------------------------------------------------------------------------
