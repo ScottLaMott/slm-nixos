@@ -54,7 +54,6 @@
     enableCompletion = true;
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
-    # enableAutopairs = true;
     dotDir = ".config/zsh";
     shellAliases = { };              # aliase, ausgelagert, see slm-aliases
     history = {
@@ -67,7 +66,7 @@
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
         # { name = "jeffreytse/zsh-vi-mode"; } # better vi-mode integration / macht prompt kaputt /slm / IMPORTANT
-        { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
+        # { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
         # { name = "zsh-users/zsh-autosuggestions"; tags = [ defer:2 ]; ?? on:"zsh-users/zsh-completions" ?? }
       ];
     };

@@ -89,6 +89,7 @@
   # search wget
   environment.systemPackages = with pkgs; [
    alacritty
+   bash
    bat
    brave
    curl
@@ -120,7 +121,10 @@
   ];
 
   # add zsh to /etc/shells
-  environment.shells = with pkgs; [ zsh ];
+  environment.shells = with pkgs; [
+    bash
+    zsh
+  ];
   # needed for system package completion
   environment.pathsToLink = [ "/share/zsh" ];
 
@@ -133,7 +137,12 @@
   # shell environment
   programs.vim.defaultEditor = true;
 
-  # List services that you want to enable:
+  programs.screen.screenrc = ''
+    #--- setenv TERM screen-256color
+    #--- shelltitle xxxxx-slm-xxxx
+  '';
+
+# List services that you want to enable:
 
   # Enable the OpenSSH daemon. services.openssh.enable = true;
   services.openssh.enable = true;
