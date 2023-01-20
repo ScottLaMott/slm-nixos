@@ -81,6 +81,7 @@
   users.users.guest.isNormalUser = true;
   users.users.guest.description = "G. Uest";
   users.users.guest.extraGroups = [ "networkmanager" "wheel" ];
+  users.users.guest.shell = pkgs.zsh;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
