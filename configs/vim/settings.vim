@@ -12,7 +12,7 @@ filetype plugin indent on
 
 "--- general
 set cursorline
-set termguicolors " macht den bildschirm schwarz/weiß
+"set termguicolors " macht den bildschirm schwarz/weiß
 set noswapfile
 set nobackup
 set nowritebackup
