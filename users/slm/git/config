@@ -1,3 +1,5 @@
 [user]
 	email = slm@example.com
 	name = Scott LaMott
+[credential]
+	helper = store
