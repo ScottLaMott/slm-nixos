@@ -65,7 +65,7 @@
       enable = true;
       zplugHome = "${config.xdg.dataHome}/zsh/zplug";
       plugins = [
-        # { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
+        { name = "hlissner/zsh-autopair"; tags = [ defer:2 ]; }
         # { name = "zsh-users/zsh-autosuggestions"; tags = [ defer:2 ]; ?? on:"zsh-users/zsh-completions" ?? }
       ];
     };
