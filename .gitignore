@@ -1,7 +1,7 @@
 result
 .git
-_zvm-config-slm.zsh
 system/hardware-configuration.nix
 tmp
 .cache
-__pycache__
+**/__pycache__/**
+users/slm/ranger/colorschemes/__pycache__/__init__.cpython-39.pyc
