@@ -131,6 +131,10 @@
   #   enable = true; enableSSHSupport = true;
   # };
 
+  programs.ssh = {
+    enableAskPassword = true;
+  };
+
   # shell environment
   programs.vim.defaultEditor = true;
 
