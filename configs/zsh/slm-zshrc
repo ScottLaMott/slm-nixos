@@ -20,9 +20,8 @@ bindkey -v '^?' backward-delete-char
 # autoload -U colors && colors
 
 # prompt ------------------------------
-autoload -Uz promptinit
-promptinit
-prompt pure
+fpath=(/home/slm/ws/github/purification $fpath)
+autoload -Uz prompt_purification_setup && prompt_purification_setup
 
 # slm ---------------------------------
 # Jump to begin of line / insert mode command line history
