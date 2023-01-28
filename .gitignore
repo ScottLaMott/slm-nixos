@@ -5,3 +5,5 @@ tmp
 .cache
 **/__pycache__/**
 users/slm/ranger/colorschemes/__pycache__/__init__.cpython-39.pyc
+users/slm/ranger/colorschemes/__pycache__/rangy.cpython-39.pyc
+
