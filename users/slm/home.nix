@@ -77,7 +77,6 @@
       [ -f  ${config.xdg.configHome}/zsh/slm-zshrc ]                && source ${config.xdg.configHome}/zsh/slm-zshrc
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]            && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
-      # [ -f  ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode ]       && source ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode
 
       export LESS='-j10'
 
