@@ -1,13 +1,16 @@
 # TODO
 
-## spotify account aendern oder repo privatisieren
+### spotify account aendern oder repo privatisieren
 
 ### todo very first
+- nixos - update auf nixos 22.10
+- home-manager - channel update auf nixos 22.10
+- git - token, git-credential helper korrekt konfigurieren
 - Git-Integragtion mit symlinks
   - ist in Arbeit
   - git-crypt für Passwörter und Secrets, siehe oben
   - fernziel stow ???
-- Ranger - Vorschau Bilddateien
+- ranger - Vorschau Bilddateien
 
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
@@ -28,9 +31,6 @@
 - ranger vorschau
   - w3mimagedisplay kann nicht aufgrufen werden, geht nicht in alacritty ???
   - ueberzug versuchen
-  - colorschemes, in welchem verzeichnis müssen die colorschemes hinterlegt werden
-    - colorschemes brauchen py endung
-    - git, python bytecode nicht einchecken
 
 ### done
 - Fehler: aufruf vim -S session.vim, fehlermeldung auswerten
@@ -78,6 +78,11 @@
 - Goyo und Limeline installiert (vim-plugin)
 
 - rofi installiert
+
+- git, python bytecode nicht einchecken,
+  - in .gitignore eingetragen, wenn datei schon zum Git-Repo hinzugefügt sind mit 'git rm --cached' aus Cache löschen
+
+- purification installiert, neuer minimaler prompt. macht einiges in der shell schneller und flüssiger.
 
 #### to-read
 - nix manual
