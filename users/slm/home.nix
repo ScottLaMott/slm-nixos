@@ -53,7 +53,6 @@
     enableCompletion = true;
     enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
-    # enableAutopairs = true;
     dotDir = ".config/zsh";
     shellAliases = { };              # aliase, ausgelagert, see slm-aliases
     history = {
@@ -80,13 +79,13 @@
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
       # [ -f  ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode ]       && source ${config.xdg.dataHome}/zsh/bin/slm-zsh-vim-mode
 
+      export LESS='-j10'
+
       # set terminal colorscheme --> papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark monokai-soda
       /usr/bin/theme.sh vag
 
       # remap caps to escape
       setxkbmap -option caps:escape
-
-      export LESS="-j15"
 
       #------------------------------------------------------------------------
     '';
