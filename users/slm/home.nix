@@ -78,7 +78,7 @@
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-aliases ]            && source ${config.xdg.dataHome}/zsh/bin/slm-aliases
       [ -f  ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages ]  && source ${config.xdg.dataHome}/zsh/bin/slm-colored-man-pages
 
-      export LESS='-j10'
+      export LESS='-j10 -R'
 
       # set terminal colorscheme --> papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark monokai-soda
       /usr/bin/theme.sh vag
@@ -173,7 +173,7 @@
       "--layout=reverse"
       "--height=80%"
       "--cycle"
-      "--border=sharp"
+      "--border=rounded"
       "--info=inline"
       "--prompt='fzf-> '"
       "--scroll-off=5"
