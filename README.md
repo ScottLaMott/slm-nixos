@@ -102,6 +102,7 @@ kill **<TAB>
   - Jan 15, 2023: rofi installiert und konfiguriert
     - git-branch feat-rofi erstellt, für Integration rofi
     - Keybindings für **rofi-Aufruf** in *~/.config/awesome/rc.lua*
+  -
 
 ## Fragen und Antworten
 Q: Sind .nix Dateien Konfigurationsdateien ?<br>
