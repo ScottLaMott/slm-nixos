@@ -38,5 +38,7 @@ Eine Sammlung guter Internetseiten
 - [Xe](https://xeiaso.net/blog)
 - [Hard User Seperation with NIXOS](https://www.tweag.io/blog/2022-11-01-hard-user-separation-with-nixos)
 
+- [Hello Open Source World. / from EPSI](https://epsi-rns.github.io)
+
 
 
