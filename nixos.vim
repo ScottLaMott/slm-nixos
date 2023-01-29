@@ -15,7 +15,6 @@ else
   set shortmess=aoO
 endif
 badd +1 users/slm/home.nix
-badd +49 system/configuration.nix
 badd +1 users/slm/awesome/rc.lua
 badd +1 users/slm/alacritty/alacritty.yml
 badd +1 users/slm/ranger/rc.conf
@@ -26,10 +25,10 @@ badd +19 todo.md
 badd +1 README.md
 badd +49 users/slm/zsh/bin/slm-aliases
 badd +2 users/slm/rofi/config.rasi
+badd +8 /etc/nixos/configuration.nix
 argglobal
 %argdel
 $argadd users/slm/home.nix
-$argadd system/configuration.nix
 $argadd users/slm/awesome/rc.lua
 $argadd users/slm/alacritty/alacritty.yml
 $argadd users/slm/ranger/rc.conf
@@ -37,7 +36,7 @@ $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
 edit users/slm/home.nix
 argglobal
-balt users/slm/rofi/config.rasi
+balt /etc/nixos/configuration.nix
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -48,12 +47,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 154 - ((21 * winheight(0) + 22) / 44)
+let s:l = 29 - ((21 * winheight(0) + 22) / 44)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 154
-normal! 05|
+keepjumps 29
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
