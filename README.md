@@ -78,7 +78,7 @@ kill **<TAB>
 - git-branch feat-neomutt erstellt, für Test neomutt
 
 - Fonts für AwesomeWM in *awesome/rc.lua* eingestellt. FontName _Hack_ schaut gut aus.
->
+
 - zsh wird nun komplett durch den home-manager gesteuert, ist deutlich schneller<br>
 
   - https://nixos.wiki/wiki/Home-Manager ## md link machen
@@ -102,7 +102,8 @@ kill **<TAB>
   - Jan 15, 2023: rofi installiert und konfiguriert
     - git-branch feat-rofi erstellt, für Integration rofi
     - Keybindings für **rofi-Aufruf** in *~/.config/awesome/rc.lua*
-  -
+  - Feb 01, 2023: auf nixos-22.11 umgestellt
+  - Feb 01, 2023: awesome-copycats installiert und angepasst
 
 ## Fragen und Antworten
 Q: Sind .nix Dateien Konfigurationsdateien ?<br>
