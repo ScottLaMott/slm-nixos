@@ -101,6 +101,7 @@
    git
    htop
    killall
+   lua
    nmap
    neofetch
    pulsemixer
