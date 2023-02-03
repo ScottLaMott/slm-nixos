@@ -11,6 +11,8 @@ let mapleader=" "
 "--- general
 map <leader>q  :quit<cr>
 map <leader>s  :Startify<cr>
+map <leader>lr :!./%<cr>
+map <leader>sr :!source %<cr>
 " ??? map <leader>s :source $HOME/.config/nvim/init.vim<cr>
 
 "--- buffers
