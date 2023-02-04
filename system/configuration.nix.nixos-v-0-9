@@ -92,6 +92,7 @@
    alacritty
    bat
    brave
+   btop
    curl
    dmenu
    fd
@@ -100,7 +101,9 @@
    fzf
    git
    htop
+   ipcalc
    killall
+   lsd
    lua
    nmap
    neofetch
@@ -109,16 +112,21 @@
    python
    ranger
    ripgrep
+   rofi
    screen
    speedtest-cli
    silver-searcher
    stow
+   sxiv
+   tshark
+   tcpdump
    tig
    tmux
    toilet
    tree
    tldr
    wget
+   zathura
   ];
 
   # add zsh to /etc/shells
