@@ -5,6 +5,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 alias v='vim'
+alias n='nvim'
 
 # --- verschiedene
 alias c='clear'
