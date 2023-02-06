@@ -29,8 +29,6 @@
     kitty
     lf
     minicom
-    neovim
-    neomutt
     powerline-fonts
     spotifyd
     spotify-tui
@@ -138,7 +136,8 @@
   # nvim configuration
   #
   programs.neovim = {
-    # enable = true; FIXME
+      enable = true;
+  #   enable = true; FIXME
   };
 
   #----------------------------------------------------------------------------
