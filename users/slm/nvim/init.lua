@@ -4,9 +4,10 @@
 
 require("user/slm/markdown-preview")
 
-require("user/catm/alpha")
 require("user/catm/options")
 require("user/catm/keymaps")
+
+require("user/slm/alpha")
 
 -- final configs
 require("config/options")

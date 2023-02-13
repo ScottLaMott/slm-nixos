@@ -94,6 +94,7 @@ vim.cmd('map <leader>ff       :Telescope find_files<cr>')
 vim.cmd('map <leader>fco      :Telescope colorscheme<cr>')
 vim.cmd('map <leader>fh       :Telescope help_tags<cr>')
 vim.cmd('map <leader>fc       :Telescope command_history<cr>')
+vim.cmd('map <leader>fo       :Telescope oldfiles<cr>')
 --]]
 
 --[[
@@ -130,4 +131,4 @@ tnoremap <Esc><Esc> <C-\><C-n>
 
 --]]
 
-print ("config/keymaps.lua loaded ...")
+-- print ("config/keymaps.lua loaded ...")

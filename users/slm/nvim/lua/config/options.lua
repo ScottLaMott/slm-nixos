@@ -16,4 +16,4 @@ vim.opt.cmdheight = 1
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-print ("config/options.lua loaded ...")
+-- print ("config/options.lua loaded ...")

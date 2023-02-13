@@ -14,14 +14,16 @@ else
   set shortmess=aoO
 endif
 badd +0 init.lua
-badd +0 readme.slm.markdown
 badd +0 readme.slm.md
 badd +0 lua/config/colorscheme.lua
+badd +0 lua/config/goyo.lua
 badd +0 lua/config/keymaps.lua
 badd +0 lua/config/lualine.lua
 badd +0 lua/config/markdown-preview.lua
 badd +0 lua/config/options.lua
+badd +0 lua/config/plugins.lua
 badd +0 lua/config/telescope.lua
+badd +0 lua/user/slm/alpha.lua
 badd +0 lua/user/slm/colorscheme.lua
 badd +0 lua/user/slm/keymaps.lua
 badd +0 lua/user/slm/lualine.lua
@@ -52,14 +54,16 @@ badd +0 lua/user/catm/whichkey.lua
 argglobal
 %argdel
 $argadd init.lua
-$argadd readme.slm.markdown
 $argadd readme.slm.md
 $argadd lua/config/colorscheme.lua
+$argadd lua/config/goyo.lua
 $argadd lua/config/keymaps.lua
 $argadd lua/config/lualine.lua
 $argadd lua/config/markdown-preview.lua
 $argadd lua/config/options.lua
+$argadd lua/config/plugins.lua
 $argadd lua/config/telescope.lua
+$argadd lua/user/slm/alpha.lua
 $argadd lua/user/slm/colorscheme.lua
 $argadd lua/user/slm/keymaps.lua
 $argadd lua/user/slm/lualine.lua
@@ -99,11 +103,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 38 - ((25 * winheight(0) + 19) / 39)
+let s:l = 14 - ((13 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 38
+keepjumps 14
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -117,7 +121,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-set hlsearch
 nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
