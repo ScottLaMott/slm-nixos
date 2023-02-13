@@ -1,29 +1,33 @@
-# SLM-NIXOS (dev-branch)
+# SLM-NIXOS
 ---
 Mein erstes NixOS-System. Benutzerverwaltung mit home-Manager.
 
-- NixOS-System bauen<br>
-  ```
-  # Build system
-  > sudo nixos-rebuild switch
-  ```
 - */etc/nixos/configuration.nix*<br>
   Konfigurationsdatei für systemweiten Einstellungen.
   ```
   # Dokumentation aller Optionen
   > man configuration.nix
   ```
-- Benutzer konfigurieren<br>
+
+- NixOS-System bauen<br>
   ```
-  # Build user
-  > home-manger switch
+  # Build system
+  > sudo nixos-rebuild switch
   ```
+
 - $HOME/ws/slm-nixos/users/slm/home.nix<br>
   Dateien mit Benutzereinstellungen. Anzeigen aller Optionen mit
   ```
   # Dokumentation aller Optionen
   > man home-configuration.nix
   ```
+
+- Benutzer konfigurieren<br>
+  ```
+  # Build user
+  > home-manger switch
+  ```
+
 <br>
 
 ## gute Webseiten
