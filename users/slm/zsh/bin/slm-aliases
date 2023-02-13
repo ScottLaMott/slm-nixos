@@ -40,7 +40,8 @@ alias gs='git status'
 alias ansp='ansible -m ping'
 
 # --- eyecandy hi hi
-alias cm='cmatrix -r'
+alias cm='cmatrix -u9'
+alias cmr='cmatrix -u9 -r'
 alias nf='clear; neofetch'
 alias cc='/usr/bin/theme.sh -i2'
 
