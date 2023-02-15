@@ -15,8 +15,12 @@ Meine nvim-Konfiguration, viele Teile sind aus *Neovim from Scratch* (chris@mach
 - Snippets testen
 - Lsp testen
 - Alpha-Plugin konfigurieren
+- Dateiname wird im nvim nicht mehr in der Statuszeile angezeigt !!!
 
 #### Done's ####
-- Alpha-Plugin konfiguriert 
+- Alpha-Plugin mit neuem figlet-Spruch konfiguriert
 #### Notes's ####
 - .nvim-session.vim in ~/.config/nvim
+
+#### Testtext ####
+dies ist ein test zum testen von markdown documentenr . asldkfj .afd afa dsfja dfkf dakfja fjakfdj afjakdjf afkaf akfaldkfadfa kdf akfd alkdfjalkfjalsjfalskfj  falkfd akdf afakdf akfdj alkfdj alkf alfdj alkfdj alfd allkfdalkfdalf alkfjalfdjakdf alkd faf afadf f ad fa f af adf a dfa fad fa dfadf adfa drjqadjfavcij fr qeirj qfa fasfiwqr dsaf asifd asfiew qfdiajfi wqdaiewf
