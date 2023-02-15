@@ -15,7 +15,8 @@ telescope.setup {
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },
-
+    -- scroll_strategy = { "cycle" },
+    -- sorting_strategy = { "ascending" }, -- TODO slm geht nicht
 
     mappings = {
       i = {
@@ -82,10 +83,21 @@ telescope.setup {
       },
     },
   },
+  
   pickers = {
     -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    find_files = { 
+
+    find_files = { 		   			-- picker_name 
+	layout_config = { prompt_position = "top" },  	-- picker prompt_position
+        prompt_title = "find_files made-by-slm ...", 	-- picker_config_key = value
+    },
+    buffers = { 		   			-- picker_name 
+	layout_config = { prompt_position = "top" },  	-- picker prompt_position
+        prompt_title = "buffers made-by-slm ...", 	-- picker_config_key = value
+    },
+    help_tags = { 		   			-- picker_name 
+	layout_config = { prompt_position = "top" },  	-- picker prompt_position
+        prompt_title = "help_tags made-by-slm ...", 	-- picker_config_key = value
     },
     --   picker_config_key = value,find_files = { },
     --   ...
@@ -93,6 +105,7 @@ telescope.setup {
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
   },
+  
   extensions = {
     -- Your extension configuration goes here:
     -- extension_name = {
