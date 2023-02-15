@@ -110,7 +110,7 @@ local editor       = os.getenv("EDITOR") or "nvim"
 local browser      = "brave"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "sandbox", "nixos", "lua", "awesome", "brave" }
+awful.util.tagnames = { "sandbox", "nixos", "lua", "awesome", "nvim" }
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.magnifier,
