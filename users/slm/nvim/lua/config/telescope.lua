@@ -16,7 +16,7 @@ telescope.setup {
     selection_caret = " ",
     path_display = { "smart" },
 
-    --[[
+
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
@@ -81,12 +81,13 @@ telescope.setup {
         ["?"] = actions.which_key,
       },
     },
-    --]]
   },
   pickers = {
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
-    --   picker_config_key = value,
+    find_files = { 
+    },
+    --   picker_config_key = value,find_files = { },
     --   ...
     -- }
     -- Now the picker_config_key will be applied every time you call this
