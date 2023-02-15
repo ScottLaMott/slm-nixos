@@ -4,8 +4,8 @@
 
 require("user/slm/markdown-preview")
 
-require("user/catm/options")
-require("user/catm/keymaps")
+-- require("user/catm/options")
+-- require("user/catm/keymaps")
 
 require("user/slm/alpha")
 
