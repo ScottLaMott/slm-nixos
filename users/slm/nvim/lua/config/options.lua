@@ -9,6 +9,8 @@ vim.opt.ignorecase      = true
 vim.opt.showmode        = false
 vim.opt.scrolloff       = 100
 
+vim.opt.clipboard = "unnamedplus"               -- allows neovim to access the system clipboard
+
 -- statusline
 vim.opt.cmdheight = 1
 
