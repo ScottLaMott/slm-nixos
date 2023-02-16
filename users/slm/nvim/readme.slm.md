@@ -9,16 +9,18 @@ Meine nvim-Konfiguration, viele Teile sind aus *Neovim from Scratch* (chris@mach
 #### Todo's ####
 - FZF-Plugin installieren und konfigurieren
 - Goyo-Plugin konfigurieren
-- Git-Plugin installieren und konfigurieren, 
-- Telescope-Layout, Picker on Top
+- Git-Plugin installieren und konfigurieren, vielleicht fugitiv
 - Silversearch (ag) testen
 - Snippets testen
 - Lsp testen
 - Alpha-Plugin konfigurieren
 - Dateiname wird im nvim nicht mehr in der Statuszeile angezeigt !!!
+- Telescope-Layout, Picker on Top, Results on top
 
 #### Done's ####
 - Alpha-Plugin mit neuem figlet-Spruch konfiguriert
+- Telescope-Layout, Picker on Top
+
 #### Notes's ####
 - .nvim-session.vim in ~/.config/nvim
 
