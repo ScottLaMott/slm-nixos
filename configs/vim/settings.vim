@@ -16,7 +16,7 @@ set cursorline
 set noswapfile
 set nobackup
 set nowritebackup
-set path+=**			                    " für z. B. find-ex-command
+set path+=**			      " für z. B. find-ex-command
 set clipboard+=unnamedplus            " use system clipboard
 set ignorecase                        " while searching
 set hlsearch                          " highlight match
