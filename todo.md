@@ -4,13 +4,14 @@
 
 ### todo very first
 - nixos - update auf nixos 22.10
-- home-manager - channel update auf nixos 22.10
 - git - token, git-credential helper korrekt konfigurieren
 - Git-Integragtion mit symlinks
   - ist in Arbeit
   - git-crypt für Passwörter und Secrets, siehe oben
   - fernziel stow ???
-- ranger - Vorschau Bilddateien
+- ranger
+  - Vorschau Bilddateien
+  - Fehlemeldung wenn ranger beendet wird 
 
 ### todo first
 - zvm, zsh-vi-mode-plugin verbessern
@@ -83,6 +84,8 @@
   - in .gitignore eingetragen, wenn datei schon zum Git-Repo hinzugefügt sind mit 'git rm --cached' aus Cache löschen
 
 - purification installiert, neuer minimaler prompt. macht einiges in der shell schneller und flüssiger.
+
+- home-manager - channel update auf nixos 22.10
 
 #### to-read
 - nix manual
