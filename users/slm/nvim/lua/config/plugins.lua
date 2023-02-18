@@ -51,6 +51,8 @@ return packer.startup(function(use)
 
   -- goyo
   use 'junegunn/goyo.vim'
+  -- nix syntax file
+  use 'LnL7/vim-nix'
  
   -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
