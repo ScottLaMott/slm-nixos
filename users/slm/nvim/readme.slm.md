@@ -14,11 +14,12 @@ Meine nvim-Konfiguration, viele Teile sind aus *Neovim from Scratch* (chris@mach
 - Snippets testen
 - Lsp testen
 - Alpha-Plugin konfigurieren
-- Dateiname wird im nvim nicht mehr in der Statuszeile angezeigt !!!
 - Telescope-Layout, Picker on Top, Results on top
 
 #### Done's ####
 - Alpha-Plugin mit neuem figlet-Spruch konfiguriert
+- Dateiname wird im nvim nicht mehr in der Statuszeile angezeigt !!!
+  - in lualine.nvim gefixt
 - Telescope-Layout, Picker on Top
 
 #### Notes's ####

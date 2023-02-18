@@ -140,6 +140,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/slm/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-nix"] = {
+    loaded = true,
+    path = "/home/slm/.local/share/nvim/site/pack/packer/start/vim-nix",
+    url = "https://github.com/LnL7/vim-nix"
   }
 }
 
