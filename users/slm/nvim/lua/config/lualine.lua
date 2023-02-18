@@ -25,13 +25,13 @@ local diff = {
 	"diff",
 	colored = false,
 	symbols = { added = " ", modified = " ", removed = " " }, -- changes diff symbols
-  cond = hide_in_width
+	cond = hide_in_width
 }
 
 local mode = {
 	"mode",
 	fmt = function(str)
-		return "-- " .. str .. " --"
+		return str
 	end,
 }
 
@@ -76,9 +76,9 @@ lualine.setup({
 		always_divide_middle = true,
 	},
 	sections = {
-		lualine_a = { branch, diagnostics },
-		lualine_b = { "filename" },
-		lualine_c = { mode },
+		lualine_a = { mode },
+		lualine_b = { branch, diagnostics },
+		lualine_c = { "filename" },
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
