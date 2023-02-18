@@ -108,6 +108,7 @@
    nmap
    neofetch
    neovim
+   nodejs
    pulsemixer
    pure-prompt
    python
@@ -127,6 +128,7 @@
    tree
    tldr
    wget
+   yarn
    zathura
   ];
 
