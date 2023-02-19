@@ -2,6 +2,7 @@
 -- general settings by slm
 
 vim.opt.cursorline      = true
+vim.opt.number          = true
 vim.opt.relativenumber  = true
 vim.opt.swapfile        = false
 vim.opt.hlsearch        = false
