@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use 'rockerBOO/boo-colorscheme-nvim'
   use 'rebelot/kanagawa.nvim'
   use 'LunarVim/onedarker.nvim'
+  use 'shaunsingh/nord.nvim'
 
   -- goyo
   use 'junegunn/goyo.vim'
