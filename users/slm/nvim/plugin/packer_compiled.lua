@@ -106,6 +106,11 @@ _G.packer_plugins = {
     path = "/home/slm/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  ["nord.nvim"] = {
+    loaded = true,
+    path = "/home/slm/.local/share/nvim/site/pack/packer/start/nord.nvim",
+    url = "https://github.com/shaunsingh/nord.nvim"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/slm/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
