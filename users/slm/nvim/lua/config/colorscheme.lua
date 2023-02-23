@@ -2,4 +2,5 @@
 -- colorscheme by slm
 -- ------------------------------------------------------------------
 
-vim.cmd('colorscheme kanagawa')
+vim.cmd('colorscheme nord')
+-- vim.cmd('colorscheme kanagawa')
