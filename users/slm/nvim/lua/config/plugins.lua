@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use 'rebelot/kanagawa.nvim'
   use 'LunarVim/onedarker.nvim'
   use 'shaunsingh/nord.nvim'
+  use 'metalelf0/jellybeans-nvim'
 
   -- goyo
   use 'junegunn/goyo.vim'
