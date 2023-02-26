@@ -1,6 +1,7 @@
 result
 .git
 users/slm/nvim/plugin/packer_compiled.lua
+users/slm/awesome/rc.lua.alt
 system/hardware-configuration.nix
 tmp
 .cache
