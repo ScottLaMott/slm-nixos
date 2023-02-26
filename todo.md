@@ -74,7 +74,7 @@
   - in .gitignore eingetragen, wenn datei schon zum Git-Repo hinzugefügt sind mit 'git rm --cached' aus Cache löschen
 - purification installiert, neuer minimaler prompt. macht einiges in der shell schneller und flüssiger.
 - home-manager - channel update auf nixos 22.10
-- alacritty colorscheme in awesomewm. nord wäre schön..
+- alacritty colorscheme in alacritty.yml gesetzt. siehe import-statement
 - nixos - update auf nixos 22.10
 
 #### to-read

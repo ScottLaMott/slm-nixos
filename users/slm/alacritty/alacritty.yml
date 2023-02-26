@@ -151,8 +151,9 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors
-#  - ~/.config/alacritty/nord.yml
+# Colors, liste in ~/.config/alacritty/scheme-list.txt
+#  - ~/.config/alacritty/nord.yml, noch verschieben
+#  
 import:
   - ~/.config/alacritty/alacritty-theme/themes/smooooth.yaml
 
