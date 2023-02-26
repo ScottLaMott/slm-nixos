@@ -153,7 +153,7 @@ draw_bold_text_with_bright_colors: true
 
 # Colors, liste in ~/.config/alacritty/scheme-list.txt
 #  - ~/.config/alacritty/nord.yml, noch verschieben
-#  
+#
 import:
   - ~/.config/alacritty/alacritty-theme/themes/smooooth.yaml
 
@@ -561,3 +561,6 @@ key_bindings:
 #  - { key: C,           mods: Control|Shift,    chars: "\x03"           }
 #  - { key: V,           mods: Control,          action: Paste           }
 #  - { key: Back,        mods: Control,          chars: "\x1b\x7f"       }
+#
+#
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
