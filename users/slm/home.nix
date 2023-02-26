@@ -72,9 +72,6 @@
 
       export LESS='-j10 -R'
 
-      # set terminal colorscheme papercolor-dark jellybeans dracula black-metal-nile summerfruit-dark monokai-soda
-      # /usr/bin/theme.sh dracula    # geht so nicht
-
       # remap caps to escape
       setxkbmap -option caps:escape
 
