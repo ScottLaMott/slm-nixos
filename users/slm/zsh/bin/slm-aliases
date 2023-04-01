@@ -43,7 +43,7 @@ alias ansp='ansible -m ping'
 alias cm='cmatrix -u9'
 alias cmr='cmatrix -u9 -r'
 alias nf='clear; neofetch'
-alias cc='/usr/bin/theme.sh -i2'
+alias cct='/usr/bin/theme.sh -i2'
 
 # --- t
 alias t='python2 ~/ws/git/t/t.py --task-dir ~/tasks --list tasks'
