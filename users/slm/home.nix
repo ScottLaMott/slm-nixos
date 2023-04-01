@@ -133,7 +133,7 @@
   # nvim configuration
   #
   programs.neovim = {
-  #   enable = true; FIXME
+     enable = true;
   };
 
   #----------------------------------------------------------------------------
