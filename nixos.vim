@@ -14,7 +14,7 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +1 users/slm/home.nix
+badd +150 users/slm/home.nix
 badd +1 users/slm/awesome/rc.lua
 badd +1 users/slm/alacritty/alacritty.yml
 badd +1 users/slm/ranger/rc.conf
@@ -26,6 +26,7 @@ badd +1 README.md
 badd +49 users/slm/zsh/bin/slm-aliases
 badd +2 users/slm/rofi/config.rasi
 badd +8 /etc/nixos/configuration.nix
+badd +6 users/slm/tmux/tmux.conf
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -36,7 +37,7 @@ $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
 edit users/slm/home.nix
 argglobal
-balt /etc/nixos/configuration.nix
+balt users/slm/tmux/tmux.conf
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -47,11 +48,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 29 - ((21 * winheight(0) + 22) / 44)
+let s:l = 138 - ((15 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 29
+keepjumps 138
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
@@ -65,6 +66,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
