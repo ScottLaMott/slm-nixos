@@ -74,7 +74,7 @@
   #  user account for slm / Scott LaMott
   users.users.slm.isNormalUser = true;
   users.users.slm.description = "Scott LaMott";
-  users.users.slm.extraGroups = [ "networkmanager" "wheel" "dialout" ];
+  users.users.slm.extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" "qemu-libvirtd" ];
   users.users.slm.shell = pkgs.zsh;
 
   # test user
@@ -103,6 +103,7 @@
    htop
    ipcalc
    killall
+   libvirt
    lsd
    lua
    nmap
@@ -113,11 +114,13 @@
    pure-prompt
    python
    ranger
+   qemu
    ripgrep
    rofi
    screen
-   speedtest-cli
    silver-searcher
+   speedtest-cli
+   # ssh-askpass-fullscreen
    stow
    sxiv
    tshark
@@ -128,6 +131,7 @@
    tree
    tldr
    wget
+   xclip
    yarn
    zathura
   ];
@@ -149,6 +153,9 @@
 
   # shell environment
   programs.vim.defaultEditor = true;
+
+  # libvirt-daemon
+  virtualisation.libvirtd.enable = true;
 
   # List services that you want to enable:
 
