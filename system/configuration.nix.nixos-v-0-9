@@ -151,6 +151,10 @@
     enableAskPassword = true;
   };
 
+  programs.tmux = {
+    enable = true;
+  };
+
   # shell environment
   programs.vim.defaultEditor = true;
 
