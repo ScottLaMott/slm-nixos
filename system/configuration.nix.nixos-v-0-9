@@ -126,7 +126,6 @@
    tshark
    tcpdump
    tig
-   tmux
    toilet
    tree
    tldr
@@ -157,6 +156,21 @@
 
   # shell environment
   programs.vim.defaultEditor = true;
+
+  #--- tmux configuration
+  programs.tmux = {
+    baseIndex = 1;
+    escapeTime = 1;
+    shortcut = "a";
+    extraConfig = ''
+      set-option -g status-left-length 20
+    '';
+    plugins = [
+      pkgs.tmuxPlugins.nord
+      pkgs.tmuxPlugins.resurrect
+      pkgs.tmuxPlugins.continuum
+    ];
+  };
 
   # libvirt-daemon
   virtualisation.libvirtd.enable = true;
