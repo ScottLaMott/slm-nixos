@@ -150,15 +150,13 @@
     enableAskPassword = true;
   };
 
-  programs.tmux = {
-    enable = true;
-  };
 
   # shell environment
   programs.vim.defaultEditor = true;
 
   #--- tmux configuration
   programs.tmux = {
+    enable = true;
     baseIndex = 1;
     escapeTime = 1;
     shortcut = "a";
