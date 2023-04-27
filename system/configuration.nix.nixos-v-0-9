@@ -160,6 +160,7 @@
     baseIndex = 1;
     escapeTime = 1;
     shortcut = "a";
+    newSession = true;
     extraConfig = ''
       set-option -g status-left-length 20
     '';
