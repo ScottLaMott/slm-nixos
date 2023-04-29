@@ -1,3 +1,6 @@
 [user]
 	email = slm@example.com
 	name = Scott LaMott
+
+#[credential "https://github.com"]
+#  username = ScottLaMott
