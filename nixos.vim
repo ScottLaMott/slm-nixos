@@ -14,19 +14,20 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +150 users/slm/home.nix
+badd +69 users/slm/home.nix
 badd +1 users/slm/awesome/rc.lua
 badd +1 users/slm/alacritty/alacritty.yml
 badd +1 users/slm/ranger/rc.conf
 badd +9 configs/vim/maps.vim
 badd +4 configs/vim/settings.vim
-badd +10 configs/zsh/slm-zshrc
-badd +19 todo.md
-badd +1 README.md
+badd +26 configs/zsh/slm-zshrc
+badd +9 todo.md
+badd +99 README.md
 badd +49 users/slm/zsh/bin/slm-aliases
 badd +2 users/slm/rofi/config.rasi
-badd +8 /etc/nixos/configuration.nix
 badd +6 users/slm/tmux/tmux.conf
+badd +34 nixos.vim
+badd +0 system/configuration.nix.nixos-v-0-9
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -35,9 +36,10 @@ $argadd users/slm/alacritty/alacritty.yml
 $argadd users/slm/ranger/rc.conf
 $argadd configs/vim/maps.vim
 $argadd configs/vim/settings.vim
-edit users/slm/home.nix
+edit system/configuration.nix.nixos-v-0-9
 argglobal
-balt users/slm/tmux/tmux.conf
+if bufexists(fnamemodify("system/configuration.nix.nixos-v-0-9", ":p")) | buffer system/configuration.nix.nixos-v-0-9 | else | edit system/configuration.nix.nixos-v-0-9 | endif
+balt nixos.vim
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -48,12 +50,13 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 138 - ((15 * winheight(0) + 16) / 32)
+let s:l = 1 - ((0 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 138
+keepjumps 1
 normal! 0
+lcd ~/ws/slm-nixos
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
