@@ -90,45 +90,23 @@
   # search wget
   environment.systemPackages = with pkgs; [
    alacritty
-   bat
-   brave
-   btop
+   bat brave btop
    curl
    dmenu
-   fd
-   file
-   firefox
-   fzf
+   fd file firefox fzf
    git
    htop
    ipcalc
    killall
-   libvirt
-   lsd
-   lua
-   nmap
-   neofetch
-   neovim
-   nodejs
-   pulsemixer
-   pure-prompt
-   python
-   ranger
+   libvirt lsd lua
+   nmap neofetch neovim nodejs
+   pulsemixer pure-prompt python
    qemu
-   ripgrep
-   rofi
-   screen
-   silver-searcher
-   speedtest-cli
+   ranger ripgrep rofi
+   screen silver-searcher speedtest-cli
    # ssh-askpass-fullscreen
-   stow
-   sxiv
-   tshark
-   tcpdump
-   tig
-   toilet
-   tree
-   tldr
+   stow sxiv tshark
+   tcpdump tig toilet tree tldr
    wget
    xclip
    yarn
@@ -163,9 +141,11 @@
     newSession = true;
     extraConfig = ''
       set-option -g status-left-length 20
+      set-option -g default-terminal "screen-256color"
     '';
     plugins = [
-      pkgs.tmuxPlugins.nord
+      # pkgs.tmuxPlugins.nord
+      pkgs.tmuxPlugins.gruvbox
       pkgs.tmuxPlugins.resurrect
       pkgs.tmuxPlugins.continuum
     ];
