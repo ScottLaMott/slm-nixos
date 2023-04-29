@@ -9,6 +9,7 @@
   - git-crypt für Passwörter und Secrets, siehe oben
   - fernziel stow ???
 - virsh/virt-viewer in kombination mit nixos-vms
+- mail client installieren
 - ranger
   - Vorschau Bilddateien
   - Fehlemeldung wenn ranger beendet wird
