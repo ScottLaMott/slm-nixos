@@ -110,7 +110,7 @@
     # -- settings managed by home manager
     settings = {
       number = true;
-      relativenumber  = true;
+      relativenumber  = false;
       expandtab = true;
       shiftwidth = 2;
       tabstop = 2;
