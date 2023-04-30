@@ -72,16 +72,19 @@
   #  services.xserver.libinput.enable = true;
 
   #  user account for slm / Scott LaMott
-  users.users.slm.isNormalUser = true;
-  users.users.slm.description = "Scott LaMott";
-  users.users.slm.extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" "qemu-libvirtd" ];
-  users.users.slm.shell = pkgs.zsh;
+  users.users.slm = {
+    isNormalUser = true;
+    description = "Scott LaMott";
+    extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" "qemu-libvirtd" ];
+    shell = pkgs.zsh;
+  };
 
-  # test user
-  users.users.guest.isNormalUser = true;
-  users.users.guest.description = "G. Uest";
-  users.users.guest.extraGroups = [ "networkmanager" "wheel" ];
-  users.users.guest.shell = pkgs.zsh;
+  users.users.guest = {
+    isNormalUser = true;
+    description = "G. Uest";
+    extraGroups = [ ];
+    shell = pkgs.zsh;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
