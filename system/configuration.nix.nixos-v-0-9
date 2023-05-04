@@ -103,15 +103,16 @@
    htop
    ipcalc
    killall
-   libvirt lsd lua
+   libvirt libguestfs lsd lua
    nmap neofetch neovim nodejs
    pulsemixer pure-prompt python
-   qemu
+   qemu qemu_kvm
    ranger ripgrep rofi
    screen silver-searcher speedtest-cli
    ssh-askpass-fullscreen
    stow sxiv tshark
    tcpdump tig toilet tree tldr
+   virt-manager virt-viewer
    wget
    xclip
    yarn
