@@ -27,7 +27,8 @@ badd +49 users/slm/zsh/bin/slm-aliases
 badd +2 users/slm/rofi/config.rasi
 badd +6 users/slm/tmux/tmux.conf
 badd +34 nixos.vim
-badd +0 system/configuration.nix.nixos-v-0-9
+badd +105 system/configuration.nix.nixos-v-0-9
+badd +8 start-tmux.sh
 argglobal
 %argdel
 $argadd users/slm/home.nix
@@ -39,7 +40,7 @@ $argadd configs/vim/settings.vim
 edit system/configuration.nix.nixos-v-0-9
 argglobal
 if bufexists(fnamemodify("system/configuration.nix.nixos-v-0-9", ":p")) | buffer system/configuration.nix.nixos-v-0-9 | else | edit system/configuration.nix.nixos-v-0-9 | endif
-balt nixos.vim
+balt users/slm/home.nix
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -50,11 +51,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 21) / 42)
+let s:l = 105 - ((19 * winheight(0) + 19) / 39)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 105
 normal! 0
 lcd ~/ws/slm-nixos
 tabnext 1
